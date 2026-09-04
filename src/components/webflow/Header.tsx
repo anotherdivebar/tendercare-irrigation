@@ -151,7 +151,20 @@ export function Header({
             >
               <summary ref={servicesToggle}>
                 {servicesLabel}
-                <span aria-hidden="true">⌄</span>
+                <svg
+                  aria-hidden="true"
+                  width="10"
+                  height="6"
+                  viewBox="0 0 10 6"
+                  fill="none"
+                >
+                  <path
+                    d="M1 1L5 5L9 1"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </summary>
               <div className="tc-nav-submenu">
                 {serviceItems.map((item) => {

@@ -268,14 +268,14 @@
 .tc-nav-dropdown > summary::-webkit-details-marker {
   display: none;
 }
-.tc-nav-dropdown > summary span {
+.tc-nav-dropdown > summary svg {
   color: var(--tc-muted);
-  font-size: 15px;
-  transform: translateY(-1px);
+  display: block;
+  flex: 0 0 auto;
   transition: transform var(--tc-transition);
 }
-.tc-nav-dropdown[open] > summary span {
-  transform: rotate(180deg) translateY(1px);
+.tc-nav-dropdown[open] > summary svg {
+  transform: rotate(180deg);
 }
 .tc-nav-dropdown > summary:hover,
 .tc-nav-dropdown[open] > summary,
