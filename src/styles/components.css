@@ -382,10 +382,14 @@
   position: absolute;
   right: 16px;
   top: 18px;
-  color: white;
+  padding: 7px 9px 6px;
+  background: rgba(20, 54, 43, 0.9);
+  color: var(--tc-white);
   font-size: 9px;
+  font-weight: 650;
+  line-height: 1.2;
   letter-spacing: 0.15em;
-  text-shadow: 0 1px 5px #000;
+  text-shadow: none;
 }
 .tc-hero-compact .tc-hero-figure {
   height: 360px;
