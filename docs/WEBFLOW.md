@@ -87,7 +87,7 @@ For later CI, use the documented `webflow devlink import --no-input` only after 
 | Conversion | CTASection, ContactSection, ServiceAreaSection | Contact form slot |
 | Forms | EstimateForm | Editable copy and optional photo upload UI; code-owned endpoint |
 
-Mobile navigation is contained in Header so it shares one React root and one list of links. A second independently imported MobileNav would require cross-root coordination and duplicate content. The internal Button, Container, Heading, Eyebrow, Section, Arrow and Photo helpers are intentionally not exposed.
+Mobile navigation is contained in Header so it shares one React root and one list of links. Header also owns the Services disclosure, including the overview, irrigation, drainage, and smart/seasonal destinations. Configure those four labels and links in the **Services menu** property group, then use the **Other navigation links** slot for About, Resources, FAQ, and Contact. A second independently imported MobileNav would require cross-root coordination and duplicate content. The internal Button, Container, Heading, Eyebrow, Section, Arrow and Photo helpers are intentionally not exposed.
 
 ## Editing content and appearance
 

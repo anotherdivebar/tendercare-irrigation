@@ -22,7 +22,12 @@ const logo = {
   alt: "TenderCare Irrigation",
 };
 export default function Layout({ children }: { children: ReactNode }) {
-  const links = navigation.map((n) => (
+  const headerLinks = navigation
+    .filter((item) => item.href !== "/services")
+    .map((n) => (
+      <NavLink key={n.href} label={n.label} link={{ href: n.href }} />
+    ));
+  const footerLinks = navigation.map((n) => (
     <NavLink key={n.href} label={n.label} link={{ href: n.href }} />
   ));
   return (
@@ -60,7 +65,11 @@ export default function Layout({ children }: { children: ReactNode }) {
         <a className="skip-link" href="#main-content">
           Skip to content
         </a>
-        <Header logo={logo} phone={business.phone ?? undefined} links={links} />
+        <Header
+          logo={logo}
+          phone={business.phone ?? undefined}
+          links={headerLinks}
+        />
         <main id="main-content" tabIndex={-1}>
           {children}
         </main>
@@ -68,7 +77,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           logo={logo}
           phone={business.phone ?? undefined}
           email={business.email ?? undefined}
-          links={links}
+          links={footerLinks}
           serviceLinks={
             <>
               <a href="/services/irrigation-systems">Irrigation systems</a>

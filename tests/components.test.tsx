@@ -40,6 +40,39 @@ it("keeps the active service category visible in navigation", () => {
     screen.getByRole("link", { name: "About" }).hasAttribute("aria-current"),
   ).toBe(false);
 });
+it("opens the Services submenu and keeps every category link accurate", async () => {
+  window.history.replaceState({}, "", "/services/irrigation-systems");
+  render(<Header links={<a href="/about">About</a>} />);
+  const summary = screen.getByText("Services").closest("summary");
+  const disclosure = summary?.closest("details") as HTMLDetailsElement | null;
+  expect(summary).toBeTruthy();
+  expect(disclosure?.dataset.current).toBe("true");
+  expect(
+    [
+      "All services",
+      "Irrigation systems",
+      "Drainage solutions",
+      "Smart & seasonal services",
+    ].map((label) =>
+      screen.getByRole("link", { name: label }).getAttribute("href"),
+    ),
+  ).toEqual([
+    "/services",
+    "/services/irrigation-systems",
+    "/services/drainage-solutions",
+    "/services/smart-upgrades",
+  ]);
+  expect(
+    screen
+      .getByRole("link", { name: "Irrigation systems" })
+      .getAttribute("aria-current"),
+  ).toBe("page");
+  await userEvent.click(summary!);
+  expect(disclosure?.open).toBe(true);
+  await userEvent.keyboard("{Escape}");
+  expect(disclosure?.open).toBe(false);
+  expect(document.activeElement).toBe(summary);
+});
 it("closes the mobile topic menu after link activation and Escape", async () => {
   render(
     <SectionNav>

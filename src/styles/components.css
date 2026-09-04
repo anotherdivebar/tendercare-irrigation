@@ -249,6 +249,76 @@
   text-decoration-thickness: 1px;
   text-underline-offset: 7px;
 }
+.tc-nav-dropdown {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.tc-nav-dropdown > summary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 7px;
+  min-height: 44px;
+  font-size: 13px;
+  list-style: none;
+  white-space: nowrap;
+}
+.tc-nav-dropdown > summary::-webkit-details-marker {
+  display: none;
+}
+.tc-nav-dropdown > summary span {
+  color: var(--tc-muted);
+  font-size: 15px;
+  transform: translateY(-1px);
+  transition: transform var(--tc-transition);
+}
+.tc-nav-dropdown[open] > summary span {
+  transform: rotate(180deg) translateY(1px);
+}
+.tc-nav-dropdown > summary:hover,
+.tc-nav-dropdown[open] > summary,
+.tc-nav-dropdown[data-current="true"] > summary {
+  color: var(--tc-burgundy);
+}
+.tc-nav-dropdown[data-current="true"] > summary {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 7px;
+}
+.tc-nav-submenu {
+  background: var(--tc-paper);
+  border: 1px solid var(--tc-line);
+  border-top: 2px solid var(--tc-burgundy);
+  box-shadow: var(--tc-shadow);
+  display: grid;
+  left: -22px;
+  min-width: 268px;
+  padding: 10px;
+  position: absolute;
+  top: 100%;
+  z-index: 30;
+}
+.tc-nav-submenu-link {
+  align-items: center;
+  border-bottom: 1px solid var(--tc-line);
+  display: flex;
+  font-size: 13px;
+  min-height: 44px;
+  padding: 8px 12px;
+}
+.tc-nav-submenu-link:last-child {
+  border-bottom: 0;
+}
+.tc-nav-submenu-link:hover,
+.tc-nav-submenu-link[aria-current="page"] {
+  background: var(--tc-cream);
+  color: var(--tc-burgundy);
+}
+.tc-nav-submenu-link[aria-current="page"] {
+  font-weight: 650;
+}
 .tc-nav-phone {
   font-size: 13px;
 }
@@ -651,6 +721,28 @@
   .tc-nav-open {
     display: flex;
     flex-direction: column;
+  }
+  .tc-nav-dropdown {
+    align-self: auto;
+    border-top: 1px solid var(--tc-line);
+    display: block;
+  }
+  .tc-nav-dropdown > summary {
+    font-size: 16px;
+    justify-content: space-between;
+    padding: 9px 0;
+  }
+  .tc-nav-submenu {
+    border: 0;
+    border-top: 1px solid var(--tc-line);
+    box-shadow: none;
+    min-width: 0;
+    padding: 4px 0 8px 16px;
+    position: static;
+  }
+  .tc-nav-submenu-link {
+    font-size: 14px;
+    padding: 7px 0;
   }
   .tc-nav-link {
     border-top: 1px solid var(--tc-line);
