@@ -22,7 +22,7 @@ export function ServiceCard({
   image,
   imageAlt,
   link = { href: "/services" },
-  linkLabel = "Explore service",
+  linkLabel = "View service details",
   services,
 }: ServiceCardProps) {
   return (

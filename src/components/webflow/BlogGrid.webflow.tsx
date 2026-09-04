@@ -12,13 +12,13 @@ export default declareComponent(BlogGrid, {
       name: "Eyebrow",
       group: "Content",
       tooltip: "Edit the eyebrow for this component.",
-      defaultValue: "The resource library",
+      defaultValue: "Irrigation resources",
     }),
     heading: props.Text({
       name: "Heading",
       group: "Content",
       tooltip: "Edit the heading for this component.",
-      defaultValue: "Practical advice.\nGrounded in good care.",
+      defaultValue: "Useful answers for\na better-working yard.",
     }),
     children: props.Slot({
       name: "Article cards",
@@ -36,20 +36,20 @@ export default declareComponent(BlogGrid, {
       name: "Empty heading",
       group: "Content",
       tooltip: "Edit the empty heading for this component.",
-      defaultValue: "Good guidance is growing here.",
+      defaultValue: "We’re working on the first articles.",
     }),
     emptyBody: props.Text({
       name: "Empty body",
       group: "Content",
       tooltip: "Edit the empty body for this component.",
       defaultValue:
-        "Our resource library is being prepared. In the meantime, explore clear answers to common irrigation and drainage questions.",
+        "For now, the FAQ covers common questions about repairs, drainage, seasonal care and irrigation controls.",
     }),
     ctaLabel: props.Text({
       name: "Button label",
       group: "Links",
       tooltip: "Edit the button label for this component.",
-      defaultValue: "Explore the irrigation FAQ",
+      defaultValue: "Browse common questions",
     }),
     ctaLink: props.Link({
       name: "Button destination",

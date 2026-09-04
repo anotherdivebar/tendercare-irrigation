@@ -12,9 +12,9 @@ export interface PricingPackagesProps {
   wellLabel?: string;
 }
 export function PricingPackages({
-  eyebrow = "Care through the seasons",
-  heading = "A little planning.\nA healthier year ahead.",
-  body = "Explore seasonal care for your water source. Request current package pricing for your system.",
+  eyebrow = "Seasonal maintenance",
+  heading = "Choose the care your\nsystem needs this year.",
+  body = "Compare seasonal care for city- and well-water systems. Current pricing depends on your system.",
   cityWater,
   wellWater,
   note,

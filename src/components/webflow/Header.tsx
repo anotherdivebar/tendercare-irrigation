@@ -22,7 +22,7 @@ export function Header({
   businessName = "TenderCare Irrigation",
   logo,
   homeLink = { href: "/" },
-  ctaLabel = "Get free estimate",
+  ctaLabel = "Get a free estimate",
   ctaLink = { href: "/estimate" },
   phone,
   location = "Wichita & the surrounding metro",

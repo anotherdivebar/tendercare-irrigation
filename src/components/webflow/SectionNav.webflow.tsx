@@ -23,7 +23,7 @@ export default declareComponent(SectionNav, {
       name: "Estimate link label",
       group: "Links",
       tooltip: "Optional action shown beside the topics on larger screens.",
-      defaultValue: "Get free estimate",
+      defaultValue: "Get a free estimate",
     }),
     ctaLink: props.Link({
       name: "Estimate destination",

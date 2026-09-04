@@ -1,4 +1,5 @@
 import { linkAttributes, type LinkValue } from "../ui";
+
 export interface FAQItemProps {
   question?: string;
   answer?: string;
@@ -7,8 +8,9 @@ export interface FAQItemProps {
   sourceLabel?: string;
   sourceLink?: LinkValue;
 }
+
 export function FAQItem({
-  question = "How can we help?",
+  question = "What should I know before scheduling service?",
   answer,
   linkLabel,
   link,
@@ -16,6 +18,7 @@ export function FAQItem({
   sourceLink,
 }: FAQItemProps) {
   if (!answer) return null;
+
   return (
     <details className="tc tc-faq-item">
       <summary>

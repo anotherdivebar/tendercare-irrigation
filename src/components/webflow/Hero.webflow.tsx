@@ -18,13 +18,13 @@ export default declareComponent(Hero, {
       name: "Heading",
       group: "Content",
       tooltip: "Edit the heading for this component.",
-      defaultValue: "Thoughtful water management.",
+      defaultValue: "Irrigation built around your property.",
     }),
     accent: props.Text({
       name: "Accent",
       group: "Content",
       tooltip: "Edit the accent for this component.",
-      defaultValue: "A better place to come home to.",
+      defaultValue: "Reliable coverage. Better drainage. Easier care.",
     }),
     body: props.Text({
       name: "Body",
@@ -49,7 +49,7 @@ export default declareComponent(Hero, {
       name: "Button label",
       group: "Links",
       tooltip: "Edit the button label for this component.",
-      defaultValue: "Get free estimate",
+      defaultValue: "Get a free estimate",
     }),
     ctaLink: props.Link({
       name: "Button destination",

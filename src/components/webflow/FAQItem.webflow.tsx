@@ -12,7 +12,7 @@ export default declareComponent(FAQItem, {
       name: "Question",
       group: "Content",
       tooltip: "Edit the question for this component.",
-      defaultValue: "How can we help?",
+      defaultValue: "What should I know before scheduling service?",
     }),
     answer: props.Text({
       name: "Answer",

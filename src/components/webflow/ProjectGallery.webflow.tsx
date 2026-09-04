@@ -12,13 +12,13 @@ export default declareComponent(ProjectGallery, {
       name: "Eyebrow",
       group: "Content",
       tooltip: "Edit the eyebrow for this component.",
-      defaultValue: "Out in the field",
+      defaultValue: "Recent field work",
     }),
     heading: props.Text({
       name: "Heading",
       group: "Content",
       tooltip: "Edit the heading for this component.",
-      defaultValue: "Real work.\nFrom the ground up.",
+      defaultValue: "Irrigation work,\nfrom trench to coverage.",
     }),
     body: props.Text({
       name: "Body",

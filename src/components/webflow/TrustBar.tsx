@@ -6,10 +6,10 @@ export interface TrustBarProps {
   fourth?: string;
 }
 export function TrustBar({
-  first = "Built around your property",
-  second = "From installation to seasonal care",
-  third = "Water used with purpose",
-  fourth = "Wichita metro service",
+  first = "New systems & targeted repairs",
+  second = "Drainage planned around the site",
+  third = "Smart controls & seasonal service",
+  fourth = "Serving the Wichita metro",
 }: TrustBarProps) {
   return (
     <div className="tc tc-trust">

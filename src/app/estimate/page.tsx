@@ -4,7 +4,7 @@ import { Container, Eyebrow, Heading } from "../../components/ui";
 import { pageMetadata } from "../../lib/seo";
 export const metadata = pageMetadata(
   "Request a Free Irrigation Estimate in Wichita",
-  "Tell TenderCare about your Wichita-area irrigation or drainage project. Request a free estimate for sprinkler installation, repair or seasonal care.",
+  "Request a free estimate for sprinkler installation, irrigation repair, yard drainage, controller upgrades or seasonal service in the Wichita metro.",
   "/estimate",
 );
 export default function Page() {
@@ -15,27 +15,27 @@ export default function Page() {
         <Container>
           <div className="tc-estimate-intro">
             <Eyebrow>Wichita & the surrounding metro</Eyebrow>
-            <Heading as="h1">Request your free estimate.</Heading>
+            <Heading as="h1">What can we help you plan or fix?</Heading>
             <p className="tc-lead">
-              A few details about your property. A clear next step for your
-              landscape.
+              Tell us where the property is and what you need. A few details
+              are enough to start.
             </p>
           </div>
           <EstimateForm
-            heading="Let’s start with the basics."
+            heading="Tell us about the property"
             endpoint={process.env.NEXT_PUBLIC_ESTIMATE_ENDPOINT}
           />
           <aside className="tc-estimate-steps">
             <h2>What happens next</h2>
             <ol>
               <li>
-                <span>01</span>Share your project details.
+                <span>01</span>Send the property details.
               </li>
               <li>
-                <span>02</span>Discuss your property and service needs.
+                <span>02</span>Discuss the problem and service options.
               </li>
               <li>
-                <span>03</span>Review the scope and next steps.
+                <span>03</span>Review the proposed scope.
               </li>
             </ol>
             <p>

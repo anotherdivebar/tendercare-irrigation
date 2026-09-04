@@ -10,7 +10,7 @@ export interface ServiceCategoryGridProps {
 }
 export function ServiceCategoryGrid({
   eyebrow = "What we do",
-  heading = "The right water.\nIn the right places.",
+  heading = "Start with what\nyour yard is telling you.",
   body,
   ctaLabel,
   ctaLink,

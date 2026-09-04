@@ -36,7 +36,7 @@ export function ServiceLanding({ category }: { category: ServiceCategory }) {
       <div className="tc-section-nav-host">
         <SectionNav
           label="Explore services"
-          ctaLabel="Get free estimate"
+          ctaLabel="Get a free estimate"
           ctaLink={{ href: "/estimate" }}
         >
           {category.details.map((d) => (
@@ -79,7 +79,7 @@ export function ServiceLanding({ category }: { category: ServiceCategory }) {
       )}
       <FaqPreview ids={questions} />
       <CTASection
-        heading={`Let’s talk about your ${category.slug === "drainage-solutions" ? "drainage" : "irrigation"}.`}
+        heading={`Ready to address your ${category.slug === "drainage-solutions" ? "drainage" : "irrigation"} problem?`}
       />
       <JsonLd data={serviceSchema(category.name, category.intro, path)} />
       <JsonLd

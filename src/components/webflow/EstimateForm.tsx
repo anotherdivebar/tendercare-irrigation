@@ -28,14 +28,14 @@ export interface EstimateFormProps {
 }
 export function EstimateForm({
   heading = "Tell us about your property",
-  intro = "Start with the basics. Fields marked * are required.",
-  submitLabel = "Request free estimate",
+  intro = "Required fields are marked *.",
+  submitLabel = "Request my free estimate",
   endpoint,
   enablePhotos = false,
-  successHeading = "Your request is on its way.",
-  successMessage = "Thank you. TenderCare will contact you using your preferred method to discuss your property and next steps.",
-  unavailableMessage = "Online requests are being prepared. This preview does not send your details.",
-  privacyNote = "Your contact details are used to respond to this request.",
+  successHeading = "We received your request.",
+  successMessage = "Thanks. TenderCare will use your preferred contact method to discuss the property and service options.",
+  unavailableMessage = "Online request delivery is not connected yet. This preview does not send your details.",
+  privacyNote = "TenderCare will use these details only to respond to this request.",
   defaultService = "",
   useQueryContext = true,
 }: EstimateFormProps) {
@@ -74,7 +74,7 @@ export function EstimateForm({
     setErrors(issues);
     if (Object.keys(issues).length || fileError) {
       setStatus("error");
-      setMessage("Please check the highlighted fields.");
+      setMessage("Please fix the fields listed below.");
       requestAnimationFrame(() => summary.current?.focus());
       return;
     }
@@ -259,7 +259,7 @@ export function EstimateForm({
         </div>
         <div className="tc-field">
           <label htmlFor={`${id}-description`}>
-            A little about your project <span>(optional)</span>
+            What are you seeing? <span>(optional)</span>
           </label>
           <textarea
             id={`${id}-description`}

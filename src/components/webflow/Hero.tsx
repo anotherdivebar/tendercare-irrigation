@@ -24,12 +24,12 @@ export interface HeroProps {
 }
 export function Hero({
   eyebrow = "Wichita, Kansas · Irrigation & drainage",
-  heading = "Thoughtful water management.",
-  accent = "A better place to come home to.",
+  heading = "Irrigation built around your property.",
+  accent = "Reliable coverage. Better drainage. Easier care.",
   body,
   image,
   imageAlt,
-  ctaLabel = "Get free estimate",
+  ctaLabel = "Get a free estimate",
   ctaLink = { href: "/estimate" },
   secondaryLabel,
   secondaryLink,

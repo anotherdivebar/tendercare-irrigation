@@ -7,8 +7,8 @@ export interface TestimonialSectionProps {
   visible?: boolean;
 }
 export function TestimonialSection({
-  eyebrow = "From our customers",
-  heading = "Care that makes a difference.",
+  eyebrow = "Customer feedback",
+  heading = "What customers say about the work.",
   children,
   visible = false,
 }: TestimonialSectionProps) {

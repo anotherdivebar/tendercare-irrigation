@@ -80,20 +80,20 @@ export function Packages() {
 }
 export function FieldGallery() {
   return (
-    <ProjectGallery body="A closer look at irrigation work and the landscapes it supports. Photography supplied by TenderCare.">
+    <ProjectGallery body="Irrigation installation, pipe work and operating systems photographed on TenderCare job sites.">
       <ProjectImage
         image={images.field}
-        caption="Water where it belongs"
+        caption="Coverage along a residential walk"
         category="Irrigation in operation"
       />
       <ProjectImage
         image={images.install}
-        caption="The work behind the landscape"
+        caption="Irrigation line on site"
         category="Irrigation installation"
       />
       <ProjectImage
         image={images.detail}
-        caption="Attention below the surface"
+        caption="Exposed pipe during system work"
         category="System work"
       />
     </ProjectGallery>

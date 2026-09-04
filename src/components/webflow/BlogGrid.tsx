@@ -11,13 +11,13 @@ export interface BlogGridProps {
   ctaLink?: LinkValue;
 }
 export function BlogGrid({
-  eyebrow = "The resource library",
-  heading = "Practical advice.\nGrounded in good care.",
+  eyebrow = "Irrigation resources",
+  heading = "Useful answers for\na better-working yard.",
   children,
   hasArticles = false,
-  emptyHeading = "Good guidance is growing here.",
-  emptyBody = "Our resource library is being prepared. In the meantime, explore clear answers to common irrigation and drainage questions.",
-  ctaLabel = "Explore the irrigation FAQ",
+  emptyHeading = "We’re working on the first articles.",
+  emptyBody = "For now, the FAQ covers common questions about repairs, drainage, seasonal care and irrigation controls.",
+  ctaLabel = "Browse common questions",
   ctaLink = { href: "/faq" },
 }: BlogGridProps) {
   return (

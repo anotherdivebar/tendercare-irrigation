@@ -13,7 +13,7 @@ export interface FooterProps {
 }
 export function Footer({
   businessName = "TenderCare Irrigation",
-  description = "Thoughtful irrigation. Practical drainage. A landscape that works beautifully.",
+  description = "Irrigation, drainage and seasonal service for Wichita-area properties.",
   location = "Serving Wichita & the surrounding metro.",
   phone,
   email,
@@ -36,7 +36,7 @@ export function Footer({
             <span className="tc-small">{location}</span>
           </div>
           <nav aria-label="Services">
-            <h2>Our expertise</h2>
+            <h2>Services</h2>
             {serviceLinks}
           </nav>
           <nav aria-label="Footer">
@@ -44,9 +44,9 @@ export function Footer({
             {links}
           </nav>
           <div>
-            <h2>Let’s talk</h2>
+            <h2>Start here</h2>
             <a className="tc-footer-cta" href="/estimate">
-              Get free estimate ↗
+              Get a free estimate ↗
             </a>
             {phone && (
               <a href={`tel:${phone.replace(/[^+\d]/g, "")}`}>{phone}</a>

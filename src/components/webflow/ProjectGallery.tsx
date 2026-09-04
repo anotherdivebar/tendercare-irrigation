@@ -8,8 +8,8 @@ export interface ProjectGalleryProps {
   theme?: Theme;
 }
 export function ProjectGallery({
-  eyebrow = "Out in the field",
-  heading = "Real work.\nFrom the ground up.",
+  eyebrow = "Recent field work",
+  heading = "Irrigation work,\nfrom trench to coverage.",
   body,
   children,
   theme = "light",

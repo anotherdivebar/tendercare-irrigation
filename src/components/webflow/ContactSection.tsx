@@ -12,9 +12,9 @@ export interface ContactSectionProps {
   children?: ReactNode;
 }
 export function ContactSection({
-  eyebrow = "Let’s talk",
-  heading = "How can we help?",
-  body = "Tell us what is happening on your property, and the best way to reach you.",
+  eyebrow = "Contact TenderCare",
+  heading = "Tell us what’s going on.",
+  body = "Share the property location, the problem you are seeing and how you prefer to be reached.",
   phone,
   email,
   address,

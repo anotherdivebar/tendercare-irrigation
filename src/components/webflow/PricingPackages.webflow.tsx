@@ -12,13 +12,13 @@ export default declareComponent(PricingPackages, {
       name: "Eyebrow",
       group: "Content",
       tooltip: "Edit the eyebrow for this component.",
-      defaultValue: "Care through the seasons",
+      defaultValue: "Seasonal maintenance",
     }),
     heading: props.Text({
       name: "Heading",
       group: "Content",
       tooltip: "Edit the heading for this component.",
-      defaultValue: "A little planning.\nA healthier year ahead.",
+      defaultValue: "Choose the care your\nsystem needs this year.",
     }),
     body: props.Text({
       name: "Body",
@@ -26,7 +26,7 @@ export default declareComponent(PricingPackages, {
       tooltip:
         "Edit the body for this component. Use clear, concise plain text.",
       defaultValue:
-        "Explore seasonal care for your water source. Request current package pricing for your system.",
+        "Compare seasonal care for city- and well-water systems. Current pricing depends on your system.",
     }),
     cityWater: props.Slot({
       name: "City-water packages",

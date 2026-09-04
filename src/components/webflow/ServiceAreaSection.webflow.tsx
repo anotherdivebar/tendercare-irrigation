@@ -11,13 +11,13 @@ export default declareComponent(ServiceAreaSection, {
       name: "Eyebrow",
       group: "Content",
       tooltip: "Edit the eyebrow for this component.",
-      defaultValue: "Rooted in the Wichita metro",
+      defaultValue: "Wichita-area service",
     }),
     heading: props.Text({
       name: "Heading",
       group: "Content",
       tooltip: "Edit the heading for this component.",
-      defaultValue: "Local care.\nA little closer to home.",
+      defaultValue: "Service across Wichita\nand nearby communities.",
     }),
     body: props.Text({
       name: "Body",
@@ -25,7 +25,7 @@ export default declareComponent(ServiceAreaSection, {
       tooltip:
         "Edit the body for this component. Use clear, concise plain text.",
       defaultValue:
-        "Irrigation and drainage services for Wichita and the surrounding communities. Share your property location so we can confirm service availability.",
+        "TenderCare serves Wichita and the surrounding metro. Enter your address or ZIP to check availability for your property.",
     }),
     communities: props.Text({
       name: "Communities",
@@ -38,7 +38,7 @@ export default declareComponent(ServiceAreaSection, {
       name: "Button label",
       group: "Links",
       tooltip: "Edit the button label for this component.",
-      defaultValue: "Ask about your area",
+      defaultValue: "Check your ZIP",
     }),
     ctaLink: props.Link({
       name: "Button destination",
@@ -50,7 +50,7 @@ export default declareComponent(ServiceAreaSection, {
       group: "Content",
       tooltip:
         "Edit the note for this component. Use clear, concise plain text.",
-      defaultValue: "Nearby? Let’s talk about your property.",
+      defaultValue: "Outside these cities? Ask about your property.",
     }),
   },
   options: { ssr: true, applyTagSelectors: false },

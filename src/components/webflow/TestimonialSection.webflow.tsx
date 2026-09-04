@@ -12,13 +12,13 @@ export default declareComponent(TestimonialSection, {
       name: "Eyebrow",
       group: "Content",
       tooltip: "Edit the eyebrow for this component.",
-      defaultValue: "From our customers",
+      defaultValue: "Customer feedback",
     }),
     heading: props.Text({
       name: "Heading",
       group: "Content",
       tooltip: "Edit the heading for this component.",
-      defaultValue: "Care that makes a difference.",
+      defaultValue: "What customers say about the work.",
     }),
     children: props.Slot({
       name: "Verified reviews",

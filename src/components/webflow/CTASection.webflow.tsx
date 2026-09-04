@@ -11,13 +11,13 @@ export default declareComponent(CTASection, {
       name: "Eyebrow",
       group: "Content",
       tooltip: "Edit the eyebrow for this component.",
-      defaultValue: "Let’s take care of it",
+      defaultValue: "Request an estimate",
     }),
     heading: props.Text({
       name: "Heading",
       group: "Content",
       tooltip: "Edit the heading for this component.",
-      defaultValue: "A better yard starts here.",
+      defaultValue: "Ready to solve the problem?",
     }),
     body: props.Text({
       name: "Body",
@@ -25,13 +25,13 @@ export default declareComponent(CTASection, {
       tooltip:
         "Edit the body for this component. Use clear, concise plain text.",
       defaultValue:
-        "Tell us about your property. We’ll help you find the right next step.",
+        "Share the property location and a short description. That is all you need to start.",
     }),
     ctaLabel: props.Text({
       name: "Button label",
       group: "Links",
       tooltip: "Edit the button label for this component.",
-      defaultValue: "Get free estimate",
+      defaultValue: "Get a free estimate",
     }),
     ctaLink: props.Link({
       name: "Button destination",
@@ -42,7 +42,7 @@ export default declareComponent(CTASection, {
       name: "Secondary button label",
       group: "Links",
       tooltip: "Edit the secondary button label for this component.",
-      defaultValue: "Have a question?",
+      defaultValue: "Ask a question",
     }),
     secondaryLink: props.Link({
       name: "Secondary destination",

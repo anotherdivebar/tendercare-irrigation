@@ -9,7 +9,7 @@ import { publishedArticles } from "../../content/posts";
 import { pageMetadata } from "../../lib/seo";
 export const metadata = pageMetadata(
   "Irrigation Resources for Wichita Homeowners",
-  "TenderCare’s resource center for irrigation and drainage. Find useful FAQs now and future guides on sprinkler care, winterization and smart watering.",
+  "Read clear answers about sprinkler repair, drainage, winterization and smart watering for Wichita-area properties.",
   "/blog",
 );
 export default function Page() {
@@ -20,9 +20,9 @@ export default function Page() {
       <Hero
         variant="compact"
         eyebrow="The TenderCare resource center"
-        heading="Know your landscape."
-        accent="Care for it confidently."
-        body="A place for practical irrigation and drainage knowledge, with the Wichita seasons in mind."
+        heading="Straight answers for a better-working yard."
+        accent=""
+        body="Understand common sprinkler and drainage problems, what may cause them and when to ask for service."
         image={images.lawn}
         ctaLabel="Explore common questions"
         ctaLink={{ href: "/faq" }}
@@ -43,8 +43,8 @@ export default function Page() {
       <ContentSection
         theme="cream"
         layout="split"
-        eyebrow="Find an answer today"
-        heading="Start with what’s happening in your yard."
+        eyebrow="Browse by problem"
+        heading="What are you seeing on your property?"
       >
         <div className="tc-resource-links">
           <a href="/faq#repairs">

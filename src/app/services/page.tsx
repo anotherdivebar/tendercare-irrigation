@@ -6,7 +6,7 @@ import { services } from "../../content/services";
 import { pageMetadata, JsonLd, breadcrumbSchema } from "../../lib/seo";
 export const metadata = pageMetadata(
   "Irrigation & Drainage Services in Wichita",
-  "Explore TenderCare’s sprinkler installation, repairs, maintenance, drainage solutions, smart controllers, backflow testing and winterization in Wichita.",
+  "Compare sprinkler installation, repair, maintenance, drainage, smart controller, backflow testing and winterization services in the Wichita metro.",
   "/services",
 );
 export default function Page() {
@@ -15,11 +15,11 @@ export default function Page() {
       <Breadcrumbs currentLabel="Services" />
       <Hero
         variant="compact"
-        eyebrow="Our expertise / Wichita metro"
-        heading="Better water management."
-        accent="From the ground up."
-        body="One property. Many moving parts. Explore irrigation, drainage and seasonal services that work together to care for your landscape."
-        secondaryLabel="Not sure what you need?"
+        eyebrow="Irrigation & drainage services / Wichita metro"
+        heading="Find the service that fits the problem."
+        accent=""
+        body="Choose from irrigation installation and repair, yard drainage, controller upgrades, backflow testing and seasonal system care."
+        secondaryLabel="Help me choose"
         secondaryLink={{ href: "/contact" }}
       />
       {services.map((s, i) => (

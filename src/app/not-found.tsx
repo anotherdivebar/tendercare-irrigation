@@ -4,9 +4,9 @@ export default function NotFound() {
     <Hero
       variant="compact"
       eyebrow="Page not found"
-      heading="Let’s get you back on familiar ground."
+      heading="That page isn’t here."
       accent=""
-      body="This page isn’t available. Explore our services or get in touch about your property."
+      body="Browse TenderCare services or return to the homepage."
       ctaLabel="Explore services"
       ctaLink={{ href: "/services" }}
       secondaryLabel="Go to the homepage"

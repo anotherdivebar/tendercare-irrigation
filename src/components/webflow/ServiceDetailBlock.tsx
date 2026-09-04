@@ -60,7 +60,7 @@ export function ServiceDetailBlock({
         <div>
           {symptoms && (
             <>
-              <h3>When it’s worth a closer look</h3>
+              <h3>When to consider this service</h3>
               <ul>
                 {symptoms
                   .split("\n")

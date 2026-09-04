@@ -8,7 +8,7 @@ import { business } from "../../content/business";
 import { pageMetadata } from "../../lib/seo";
 export const metadata = pageMetadata(
   "Contact TenderCare Irrigation in Wichita",
-  "Contact TenderCare about irrigation, sprinkler repair, drainage or seasonal service in Wichita. Share your property details and ask about availability.",
+  "Contact TenderCare about sprinkler installation, irrigation repair, yard drainage or seasonal service in the Wichita metro.",
   "/contact",
 );
 export default function Page() {
@@ -18,21 +18,21 @@ export default function Page() {
       <Hero
         variant="compact"
         eyebrow="Contact TenderCare"
-        heading="Let’s talk about your landscape."
+        heading="Tell us what’s happening on your property."
         accent=""
-        body="A repair, a new project or a question about your system. Start the conversation here."
-        ctaLabel="Request a free estimate"
+        body="Need a repair, planning a new system or dealing with standing water? Send the basics and the best way to reach you."
+        ctaLabel="Get a free estimate"
       />
       <ContactSection
-        heading="A useful conversation starts here."
-        body="Include your location, the service you have in mind and the best way to reach you. Scheduling and the proposed scope are confirmed after your inquiry."
+        heading="What should you include?"
+        body="Share the property location, what you are seeing and the service you have in mind. TenderCare can then discuss current availability and the service options."
         phone={business.phone ?? undefined}
         email={business.email ?? undefined}
         address={business.address ?? undefined}
         hours={business.hours ?? undefined}
       >
         <EstimateForm
-          heading="Send an inquiry"
+          heading="Contact TenderCare"
           submitLabel="Send inquiry"
           endpoint={process.env.NEXT_PUBLIC_ESTIMATE_ENDPOINT}
         />

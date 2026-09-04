@@ -9,13 +9,13 @@ export interface ServiceAreaSectionProps {
   note?: string;
 }
 export function ServiceAreaSection({
-  eyebrow = "Rooted in the Wichita metro",
-  heading = "Local care.\nA little closer to home.",
-  body = "Irrigation and drainage services for Wichita and the surrounding communities. Share your property location so we can confirm service availability.",
+  eyebrow = "Wichita-area service",
+  heading = "Service across Wichita\nand nearby communities.",
+  body = "TenderCare serves Wichita and the surrounding metro. Enter your address or ZIP to check availability for your property.",
   communities = "Wichita\nDerby\nAndover\nMaize\nHaysville\nGoddard",
-  ctaLabel = "Ask about your area",
+  ctaLabel = "Check your ZIP",
   ctaLink = { href: "/contact" },
-  note = "Nearby? Let’s talk about your property.",
+  note = "Outside these cities? Ask about your property.",
 }: ServiceAreaSectionProps) {
   return (
     <Section theme="cream" className="tc-service-area">

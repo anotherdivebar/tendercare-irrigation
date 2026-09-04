@@ -9,7 +9,7 @@ import { images } from "../../content/assets";
 import { pageMetadata } from "../../lib/seo";
 export const metadata = pageMetadata(
   "About Our Wichita Irrigation Company",
-  "Get to know TenderCare Irrigation’s practical approach to sprinkler systems, drainage and seasonal landscape care in the Wichita metro.",
+  "Learn how TenderCare approaches sprinkler systems, drainage and seasonal irrigation service for Wichita-area properties.",
   "/about",
 );
 export default function Page() {
@@ -19,51 +19,50 @@ export default function Page() {
       <Hero
         variant="compact"
         eyebrow="About TenderCare"
-        heading="The care is in the details."
+        heading="Water management starts with the property."
         accent=""
-        body="TenderCare Irrigation helps Wichita-area properties manage water through sprinkler installation, repairs, drainage and seasonal service. Our focus is simple: understand the landscape and help it work better."
+        body="TenderCare installs, repairs and maintains irrigation and drainage systems across the Wichita metro. Every recommendation begins with the system, the site and the problem you want solved."
         image={images.team}
       />
       <ContentSection
         layout="split"
-        eyebrow="Our approach"
-        heading="See the whole landscape."
-        body="An irrigation system does not work in isolation. Soil, slope, plants and weather all influence what happens to water once it reaches your yard."
+        eyebrow="Start with the cause"
+        heading="The visible problem is only part of the story."
+        body="A dry lawn can come from a damaged head, low pressure, poor coverage or the schedule. A wet area can come from runoff, grading, slow soil or the irrigation system itself."
       >
         <p>
-          That is why the starting point is your property: where it is dry,
-          where it stays wet, what has changed and what you want to improve.
-          Understanding those conditions makes a service recommendation more
-          useful.
+          Where the problem appears, when it happens and what changed recently
+          are useful clues. Looking at those details first helps narrow the
+          problem before equipment or repairs are recommended.
         </p>
         <p>
-          From a single repair to planning a new system, the conversation should
-          be clear about the problem, the proposed scope and the care the
-          landscape will need afterward.
+          Whether the job is one broken zone or a complete system, you should
+          understand the proposed work, what it addresses and what the system
+          will need afterward.
         </p>
       </ContentSection>
       <ServiceFeatureSection
         image={images.detail}
-        eyebrow="A practical standard of care"
-        heading="Good questions.\nCareful work."
-        body="A successful project begins with a shared understanding of what needs to happen."
+        eyebrow="A straightforward way to work"
+        heading="Inspect first.\nExplain the work."
+        body="You should know what is causing the problem, what the proposed work covers and what the system may need later."
         ctaLabel="Explore our services"
         ctaLink={{ href: "/services" }}
       >
-        <h3>Look before recommending.</h3>
+        <h3>Diagnose before recommending.</h3>
         <p>
-          Understand the water source, system condition and site constraints
-          before choosing equipment or a repair.
+          Check the water source, system condition and site constraints before
+          choosing equipment or a repair.
         </p>
-        <h3>Make the next step clear.</h3>
+        <h3>Define the scope.</h3>
         <p>
-          Discuss the work, the scope and ongoing maintenance so you can make an
-          informed decision.
+          Know what the work is meant to fix, what is included and what may need
+          attention later.
         </p>
-        <h3>Keep the seasons in view.</h3>
+        <h3>Account for the full season.</h3>
         <p>
-          Plan for startup, in-season adjustments and shutdown as part of caring
-          for the system.
+          Include startup, in-season adjustments and winter shutdown in the
+          system’s long-term plan.
         </p>
       </ServiceFeatureSection>
       <ProcessSection />

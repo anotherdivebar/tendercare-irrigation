@@ -16,10 +16,10 @@ export default function Page() {
       <Breadcrumbs currentLabel="Frequently asked questions" />
       <Hero
         variant="compact"
-        eyebrow="The irrigation knowledge guide"
-        heading="A little clarity goes a long way."
+        eyebrow="Irrigation & drainage FAQ"
+        heading="Answers before you schedule."
         accent=""
-        body="Straight answers to common questions about your sprinkler system, drainage and seasonal care. Start with the topic that is on your mind."
+        body="Get a direct answer about sprinkler installation, repairs, drainage, backflow testing, smart controllers or winterization."
         ctaLabel="Ask us a question"
         ctaLink={{ href: "/contact" }}
       />
@@ -46,7 +46,7 @@ export default function Page() {
         </div>
       ))}
       <CTASection
-        heading="Still have a question?"
+        heading="Have a question about your property?"
         ctaLabel="Contact TenderCare"
         ctaLink={{ href: "/contact" }}
         secondaryLabel="Request an estimate"

@@ -12,13 +12,13 @@ export default declareComponent(FAQAccordion, {
       name: "Eyebrow",
       group: "Content",
       tooltip: "Edit the eyebrow for this component.",
-      defaultValue: "A little clarity",
+      defaultValue: "Common questions",
     }),
     heading: props.Text({
       name: "Heading",
       group: "Content",
       tooltip: "Edit the heading for this component.",
-      defaultValue: "Good questions.\nStraight answers.",
+      defaultValue: "Know what to expect\nbefore you schedule.",
     }),
     body: props.Text({
       name: "Body",
@@ -31,7 +31,7 @@ export default declareComponent(FAQAccordion, {
       name: "Button label",
       group: "Links",
       tooltip: "Edit the button label for this component.",
-      defaultValue: "Visit our FAQ",
+      defaultValue: "See all questions",
     }),
     ctaLink: props.Link({
       name: "Button destination",

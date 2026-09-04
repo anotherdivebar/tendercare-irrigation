@@ -19,13 +19,13 @@ export default declareComponent(ContactSection, {
       name: "Eyebrow",
       group: "Content",
       tooltip: "Edit the eyebrow for this component.",
-      defaultValue: "Let’s talk",
+      defaultValue: "Contact TenderCare",
     }),
     heading: props.Text({
       name: "Heading",
       group: "Content",
       tooltip: "Edit the heading for this component.",
-      defaultValue: "How can we help?",
+      defaultValue: "Tell us what’s going on.",
     }),
     body: props.Text({
       name: "Body",
@@ -33,7 +33,7 @@ export default declareComponent(ContactSection, {
       tooltip:
         "Edit the body for this component. Use clear, concise plain text.",
       defaultValue:
-        "Tell us what is happening on your property, and the best way to reach you.",
+        "Share the property location, the problem you are seeing and how you prefer to be reached.",
     }),
     phone: props.Text({
       name: "Phone",

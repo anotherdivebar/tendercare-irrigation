@@ -20,7 +20,7 @@ export default declareComponent(Footer, {
       tooltip:
         "Edit the description for this component. Use clear, concise plain text.",
       defaultValue:
-        "Thoughtful irrigation. Practical drainage. A landscape that works beautifully.",
+        "Irrigation, drainage and seasonal service for Wichita-area properties.",
     }),
     location: props.Text({
       name: "Location",

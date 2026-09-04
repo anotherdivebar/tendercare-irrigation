@@ -10,10 +10,10 @@ export interface FAQAccordionProps {
   variant?: "split" | "full";
 }
 export function FAQAccordion({
-  eyebrow = "A little clarity",
-  heading = "Good questions.\nStraight answers.",
+  eyebrow = "Common questions",
+  heading = "Know what to expect\nbefore you schedule.",
   body,
-  ctaLabel = "Visit our FAQ",
+  ctaLabel = "See all questions",
   ctaLink = { href: "/faq" },
   children,
   variant = "split",

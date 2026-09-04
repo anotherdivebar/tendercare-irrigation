@@ -9,12 +9,12 @@ export interface CTASectionProps {
   secondaryLink?: LinkValue;
 }
 export function CTASection({
-  eyebrow = "Let’s take care of it",
-  heading = "A better yard starts here.",
-  body = "Tell us about your property. We’ll help you find the right next step.",
-  ctaLabel = "Get free estimate",
+  eyebrow = "Request an estimate",
+  heading = "Ready to solve the problem?",
+  body = "Share the property location and a short description. That is all you need to start.",
+  ctaLabel = "Get a free estimate",
   ctaLink = { href: "/estimate" },
-  secondaryLabel = "Have a question?",
+  secondaryLabel = "Ask a question",
   secondaryLink = { href: "/contact" },
 }: CTASectionProps) {
   return (

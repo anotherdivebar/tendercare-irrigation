@@ -14,7 +14,7 @@ export const faqs: FAQ[] = [
     category: "Estimates & scheduling",
     question: "How do I request a free estimate?",
     answer:
-      "Use the estimate request page to share your contact details, property location and service needs. A brief description helps identify the right next step; an estimate request does not confirm an appointment.",
+      "Start with the estimate form. Add your property location, the service you need and a short description of the problem. This begins the conversation; it does not reserve an appointment.",
     link: "/estimate",
     linkLabel: "Request a free estimate",
   },
@@ -23,7 +23,7 @@ export const faqs: FAQ[] = [
     category: "Estimates & scheduling",
     question: "How soon can service be scheduled?",
     answer:
-      "Availability depends on the service, location, season and current workload. Ask about the available appointments when you contact TenderCare; a specific response or repair time is not promised on this site.",
+      "Scheduling changes with the service, location, season and current workload. Send the property details and service needed so TenderCare can confirm current availability.",
     link: "/contact",
     linkLabel: "Ask about scheduling",
   },
@@ -32,7 +32,7 @@ export const faqs: FAQ[] = [
     category: "Installation",
     question: "How long does sprinkler installation take?",
     answer:
-      "Installation time depends on the property size, zone layout, soil, access and restoration needs. Ask for a project-specific schedule after the site has been assessed rather than relying on a general number of days.",
+      "Installation time depends on the property size, number of zones, soil, access and restoration work. After the site assessment, ask for a schedule based on the actual scope.",
     link: "/services/irrigation-systems#sprinkler-installation",
     linkLabel: "Understand sprinkler installation",
   },
@@ -41,7 +41,7 @@ export const faqs: FAQ[] = [
     category: "Installation",
     question: "Will sprinkler installation disturb my lawn?",
     answer:
-      "Installing underground piping usually involves some disturbance. The extent depends on the installation method, access and soil conditions. Discuss trenching, existing landscaping and the restoration included in the scope before work begins.",
+      "Yes, installing underground pipe usually disturbs part of the lawn. How much depends on the installation method, access and soil. Before work begins, review the trenching route and what restoration is included.",
     link: "/services/irrigation-systems#sprinkler-installation",
     linkLabel: "Explore installation planning",
   },
@@ -59,7 +59,7 @@ export const faqs: FAQ[] = [
     category: "Repairs",
     question: "How much does sprinkler repair cost?",
     answer:
-      "Sprinkler repair pricing depends on the cause, required parts, access and labor. A damaged head and an underground line repair can involve very different work. Request an assessment and confirm the proposed scope and price before repairs begin.",
+      "Sprinkler repair cost depends on the cause, parts, access and labor. Replacing a damaged head is very different from repairing an underground line, so the system needs to be checked before the price can be confirmed.",
     link: "/estimate",
     linkLabel: "Request sprinkler repair pricing",
   },
@@ -68,7 +68,7 @@ export const faqs: FAQ[] = [
     category: "Repairs",
     question: "Should I repair or replace my sprinkler system?",
     answer:
-      "A localized problem in an otherwise sound system may be repairable. Repeated failures, widespread deterioration or a layout that no longer suits the landscape may justify a larger upgrade. Compare options after checking the system’s condition.",
+      "A localized problem in an otherwise sound system is often a repair. Repeated failures, widespread deterioration or a layout that no longer fits the landscape may point to a larger upgrade. The system’s condition should guide the decision.",
     link: "/services/irrigation-systems",
     linkLabel: "Review your irrigation options",
   },
@@ -77,7 +77,7 @@ export const faqs: FAQ[] = [
     category: "Maintenance",
     question: "What should a spring sprinkler startup check?",
     answer:
-      "A startup should assess how the system operates after winter, including visible leaks, zone activation, head coverage and controller settings. The exact checks depend on the equipment and the agreed service scope.",
+      "A spring startup should check for visible leaks, confirm that each zone runs, review head coverage and update controller settings. The exact checks depend on the equipment and the service scope.",
     link: "/services/irrigation-systems#maintenance-plans",
     linkLabel: "Explore seasonal maintenance",
   },
@@ -86,7 +86,7 @@ export const faqs: FAQ[] = [
     category: "Maintenance",
     question: "How much water should my Wichita lawn receive?",
     answer:
-      "Watering needs depend on the grass, soil, weather and recent rainfall. Avoid using the same timer setting all season. Check actual soil moisture and adjust to current conditions and local watering rules.",
+      "There is no single schedule that fits every Wichita lawn. Grass type, soil, weather and recent rainfall all matter, so check the soil and adjust the controller as conditions change.",
     source: "https://www.epa.gov/watersense/watering-tips",
     sourceLabel: "EPA WaterSense watering tips",
     link: "/services/smart-upgrades#controller-upgrades",
@@ -124,7 +124,7 @@ export const faqs: FAQ[] = [
     category: "Backflow",
     question: "How often does a backflow preventer need testing?",
     answer:
-      "Testing frequency is set by the water supplier and applicable requirements. Wichita’s published code specifies testing intervals of no more than one year for covered backflow devices. Check your current utility notice, device requirements and local rules before arranging service.",
+      "The water supplier sets the testing schedule. Wichita’s published code specifies testing at intervals of no more than one year for covered backflow devices. Check the current utility notice and requirements for your device before scheduling service.",
     source:
       "https://library.municode.com/ks/wichita/codes/code_of_ordinances?nodeId=TIT17WA_CH17.10BACRCOCO",
     sourceLabel: "Wichita Code, Chapter 17.10",
@@ -147,7 +147,7 @@ export const faqs: FAQ[] = [
     category: "Winterization",
     question: "When should sprinklers be winterized in Wichita?",
     answer:
-      "Plan to winterize before freezing weather can damage components that still contain water. Timing varies with weather and the system. Arrange service ahead of the cold-weather rush and ask what shutdown procedure your equipment requires.",
+      "Winterize before freezing weather can damage components that still hold water. The exact timing changes with the forecast and the system, so arrange service before the cold-weather rush.",
     link: "/services/smart-upgrades#winterization",
     linkLabel: "Plan sprinkler winterization",
   },
@@ -186,7 +186,7 @@ export const faqs: FAQ[] = [
     category: "Pricing & packages",
     question: "What is the difference between Gold and Silver packages?",
     answer:
-      "Gold includes two mid-season evaluations and Silver includes one. Both include startup and winterization. City-water versions also include backflow certification. Confirm the current inclusions, eligibility and pricing for your system.",
+      "Gold includes two mid-season evaluations; Silver includes one. Both include startup and winterization, and city-water versions also include backflow certification. Ask TenderCare to confirm current pricing and whether the standard scope fits your system.",
     link: "/services/irrigation-systems#packages",
     linkLabel: "Compare seasonal care packages",
   },
@@ -195,7 +195,7 @@ export const faqs: FAQ[] = [
     category: "Pricing & packages",
     question: "Does the size of my system affect package pricing?",
     answer:
-      "It can. Standard package scope covers systems with up to 12 zones and one PVB backflow device, and notes possible additional charges for larger or more complex systems. Current prices and terms need to be confirmed with TenderCare.",
+      "Yes, larger or more complex systems may cost more to service. The standard package scope covers up to 12 zones and one PVB backflow device. Ask TenderCare for current pricing for your system.",
     link: "/estimate",
     linkLabel: "Request pricing for your system",
   },
@@ -213,7 +213,7 @@ export const faqs: FAQ[] = [
     category: "Wichita service area",
     question: "Can I ask about a commercial or larger property?",
     answer:
-      "Yes. Include the property type, approximate size and irrigation or drainage needs in your inquiry. The suitable scope, access requirements and scheduling should be confirmed for the individual property.",
+      "Yes. Include the property type, approximate size and irrigation or drainage needs in the estimate request. TenderCare can then review the scope, access and scheduling for that property.",
     link: "/estimate",
     linkLabel: "Discuss your property",
   },

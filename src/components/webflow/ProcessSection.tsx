@@ -10,14 +10,14 @@ export interface ProcessSectionProps {
   thirdBody?: string;
 }
 export function ProcessSection({
-  eyebrow = "A clear path forward",
-  heading = "Good work starts with\na good understanding.",
-  firstTitle = "Tell us what’s happening",
-  firstBody = "Share your property details and what you would like to improve.",
-  secondTitle = "Understand the property",
-  secondBody = "Discuss the system, the landscape and the right approach for your needs.",
-  thirdTitle = "Make a plan for the work",
-  thirdBody = "Review the proposed scope and confirm the next steps before work begins.",
+  eyebrow = "How service starts",
+  heading = "What happens after\nyou get in touch.",
+  firstTitle = "Show us the problem",
+  firstBody = "Tell us what you are seeing, where it is happening and what you want to change.",
+  secondTitle = "Look at the whole system",
+  secondBody = "The water source, equipment, grade and landscape all shape the recommendation.",
+  thirdTitle = "Review the scope",
+  thirdBody = "Review the recommended work and decide how you want to move forward.",
 }: ProcessSectionProps) {
   return (
     <Section>

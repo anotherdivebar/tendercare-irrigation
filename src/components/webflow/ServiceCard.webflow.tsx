@@ -48,7 +48,7 @@ export default declareComponent(ServiceCard, {
       name: "Link label",
       group: "Links",
       tooltip: "Edit the link label for this component.",
-      defaultValue: "Explore service",
+      defaultValue: "View service details",
     }),
     services: props.Text({
       name: "Services",

@@ -56,13 +56,13 @@ export default declareComponent(WebflowEstimateForm, {
       group: "Content",
       tooltip:
         "Edit the intro for this component. Use clear, concise plain text.",
-      defaultValue: "Start with the basics. Fields marked * are required.",
+      defaultValue: "Required fields are marked *.",
     }),
     submitLabel: props.Text({
       name: "Submit label",
       group: "Links",
       tooltip: "Edit the submit label for this component.",
-      defaultValue: "Request free estimate",
+      defaultValue: "Request my free estimate",
     }),
     enablePhotos: props.Visibility({
       name: "Allow photo uploads",
@@ -74,7 +74,7 @@ export default declareComponent(WebflowEstimateForm, {
       name: "Success heading",
       group: "Content",
       tooltip: "Edit the success heading for this component.",
-      defaultValue: "Your request is on its way.",
+      defaultValue: "We received your request.",
     }),
     successMessage: props.Text({
       name: "Success message",
@@ -82,7 +82,7 @@ export default declareComponent(WebflowEstimateForm, {
       tooltip:
         "Edit the success message for this component. Use clear, concise plain text.",
       defaultValue:
-        "Thank you. TenderCare will contact you using your preferred method to discuss your property and next steps.",
+        "Thanks. TenderCare will use your preferred contact method to discuss the property and service options.",
     }),
     unavailableMessage: props.Text({
       name: "Unavailable message",
@@ -90,14 +90,14 @@ export default declareComponent(WebflowEstimateForm, {
       tooltip:
         "Edit the unavailable message for this component. Use clear, concise plain text.",
       defaultValue:
-        "Online requests are being prepared. This preview does not send your details.",
+        "Online request delivery is not connected yet. This preview does not send your details.",
     }),
     privacyNote: props.Text({
       name: "Privacy note",
       group: "Content",
       tooltip:
         "Edit the privacy note for this component. Use clear, concise plain text.",
-      defaultValue: "Your contact details are used to respond to this request.",
+      defaultValue: "TenderCare will use these details only to respond to this request.",
     }),
   },
   options: { ssr: true, applyTagSelectors: false },

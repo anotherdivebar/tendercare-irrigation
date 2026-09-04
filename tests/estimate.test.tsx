@@ -50,7 +50,7 @@ describe("Estimate request", () => {
     ])
       fireEvent.change(screen.getByLabelText(label), { target: { value } });
     await userEvent.click(
-      screen.getByRole("button", { name: "Request free estimate" }),
+      screen.getByRole("button", { name: "Request my free estimate" }),
     );
     await screen.findByRole("status");
     const sent = fetchMock.mock.calls[0][1].body as FormData;
@@ -153,7 +153,7 @@ describe("Estimate request", () => {
     vi.stubGlobal("fetch", fetchMock);
     render(<EstimateForm />);
     await userEvent.click(
-      screen.getByRole("button", { name: "Request free estimate" }),
+      screen.getByRole("button", { name: "Request my free estimate" }),
     );
     expect(screen.getByRole("alert").textContent).toContain("Enter your name.");
     expect(fetchMock).not.toHaveBeenCalled();
@@ -175,7 +175,7 @@ describe("Estimate request", () => {
       target: { value: valid.service },
     });
     await userEvent.click(
-      screen.getByRole("button", { name: "Request free estimate" }),
+      screen.getByRole("button", { name: "Request my free estimate" }),
     );
     expect(screen.getByRole("alert").textContent).toContain("does not send");
     expect(fetchMock).not.toHaveBeenCalled();
@@ -201,11 +201,11 @@ describe("Estimate request", () => {
       target: { value: valid.service },
     });
     await userEvent.click(
-      screen.getByRole("button", { name: "Request free estimate" }),
+      screen.getByRole("button", { name: "Request my free estimate" }),
     );
     await waitFor(() =>
       expect(screen.getByRole("status").textContent).toContain(
-        "Your request is on its way.",
+        "We received your request.",
       ),
     );
   });
@@ -234,7 +234,7 @@ describe("Estimate request", () => {
       target: { value: valid.service },
     });
     await userEvent.click(
-      screen.getByRole("button", { name: "Request free estimate" }),
+      screen.getByRole("button", { name: "Request my free estimate" }),
     );
     await waitFor(() =>
       expect(screen.getByRole("alert").textContent).toContain(

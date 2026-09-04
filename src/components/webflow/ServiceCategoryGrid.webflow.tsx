@@ -18,7 +18,7 @@ export default declareComponent(ServiceCategoryGrid, {
       name: "Heading",
       group: "Content",
       tooltip: "Edit the heading for this component.",
-      defaultValue: "The right water.\nIn the right places.",
+      defaultValue: "Start with what\nyour yard is telling you.",
     }),
     body: props.Text({
       name: "Body",

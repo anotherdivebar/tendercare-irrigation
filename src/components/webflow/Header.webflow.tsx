@@ -35,7 +35,7 @@ export default declareComponent(Header, {
       name: "Button label",
       group: "Links",
       tooltip: "Edit the button label for this component.",
-      defaultValue: "Get free estimate",
+      defaultValue: "Get a free estimate",
     }),
     ctaLink: props.Link({
       name: "Button destination",
