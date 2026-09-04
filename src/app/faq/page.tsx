@@ -19,7 +19,7 @@ export default function Page() {
         eyebrow="Irrigation & drainage FAQ"
         heading="Answers before you schedule."
         accent=""
-        body="Get a direct answer about sprinkler installation, repairs, drainage, backflow testing, smart controllers or winterization."
+        body="Get direct answers about estimates, scheduling, sprinkler systems, drainage, backflow testing, smart controllers and winterization."
         ctaLabel="Ask us a question"
         ctaLink={{ href: "/contact" }}
       />

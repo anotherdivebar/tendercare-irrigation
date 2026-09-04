@@ -28,6 +28,24 @@ export const faqs: FAQ[] = [
     linkLabel: "Ask about scheduling",
   },
   {
+    id: "estimate-details",
+    category: "Estimates & scheduling",
+    question: "What information should I include with my request?",
+    answer:
+      "Include the property address or ZIP, what you are seeing and when it happens. Details such as the affected zone, a visible leak, a soggy area or a controller message can help TenderCare understand where to start. You do not need to diagnose the problem first.",
+    link: "/estimate",
+    linkLabel: "Start your estimate request",
+  },
+  {
+    id: "service-choice",
+    category: "Estimates & scheduling",
+    question: "What if I am not sure which service I need?",
+    answer:
+      "Describe the symptom instead of guessing at the solution. Uneven watering, a zone that will not run, water near the foundation or standing water after rain give TenderCare a useful starting point for the conversation.",
+    link: "/contact",
+    linkLabel: "Describe your property issue",
+  },
+  {
     id: "install-time",
     category: "Installation",
     question: "How long does sprinkler installation take?",
@@ -71,6 +89,15 @@ export const faqs: FAQ[] = [
       "A localized problem in an otherwise sound system is often a repair. Repeated failures, widespread deterioration or a layout that no longer fits the landscape may point to a larger upgrade. The system’s condition should guide the decision.",
     link: "/services/irrigation-systems",
     linkLabel: "Review your irrigation options",
+  },
+  {
+    id: "low-pressure",
+    category: "Repairs",
+    question: "Why does one sprinkler zone have low pressure?",
+    answer:
+      "Low pressure in one zone can come from a leaking line, a valve problem, clogged nozzles, a supply restriction or too many heads operating together. Checking the full zone helps locate the cause before parts are replaced.",
+    link: "/services/irrigation-systems#sprinkler-repair",
+    linkLabel: "Explore sprinkler diagnostics and repair",
   },
   {
     id: "startup",
@@ -118,6 +145,15 @@ export const faqs: FAQ[] = [
       "It can help when concentrated roof runoff is the cause and there is a suitable route for the water. The outlet must be planned so it does not create a new problem for the property or its neighbors.",
     link: "/services/drainage-solutions#downspout-extensions",
     linkLabel: "Explore downspout extensions",
+  },
+  {
+    id: "drainage-assessment",
+    category: "Drainage",
+    question: "How is a yard drainage problem evaluated?",
+    answer:
+      "A drainage assessment looks at where water enters the property, where it collects, the slope and soil conditions, and whether there is a suitable outlet. Observations made during or soon after rain can help show how the water is actually moving.",
+    link: "/services/drainage-solutions#yard-drainage",
+    linkLabel: "See how yard drainage is approached",
   },
   {
     id: "backflow-frequency",
@@ -180,6 +216,15 @@ export const faqs: FAQ[] = [
       "Connection requirements vary by model and feature. Some connected controls rely on internet access for weather data or remote operation. Check the manufacturer’s requirements and the signal at the installation location before selecting equipment.",
     link: "/services/smart-upgrades#controller-upgrades",
     linkLabel: "Discuss controller compatibility",
+  },
+  {
+    id: "smart-coverage",
+    category: "Smart controllers",
+    question: "Can a smart controller fix uneven watering?",
+    answer:
+      "No. A smart controller can improve when and how long the system runs, but it cannot repair a leak, clogged nozzle, poor pressure or misaligned head. Correct the water-delivery problem first, then use the controller to improve the schedule.",
+    link: "/services/smart-upgrades#controller-upgrades",
+    linkLabel: "Explore smart controller upgrades",
   },
   {
     id: "gold-silver",

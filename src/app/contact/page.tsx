@@ -3,7 +3,6 @@ import { Breadcrumbs } from "../../components/webflow/Breadcrumbs";
 import { ContactSection } from "../../components/webflow/ContactSection";
 import { EstimateForm } from "../../components/webflow/EstimateForm";
 import { ServiceAreaSection } from "../../components/webflow/ServiceAreaSection";
-import { FaqPreview } from "../../components/preview/blocks";
 import { business } from "../../content/business";
 import { pageMetadata } from "../../lib/seo";
 export const metadata = pageMetadata(
@@ -38,7 +37,6 @@ export default function Page() {
         />
       </ContactSection>
       <ServiceAreaSection />
-      <FaqPreview ids={["schedule", "area", "estimate"]} />
     </>
   );
 }
