@@ -8,11 +8,11 @@ Verified September 4, 2026. This report covers the React component library and t
 | --- | --- |
 | `npm run lint` | Passed |
 | `npm run typecheck` | Passed |
-| `npm test` | 27 tests passed across two files |
+| `npm test` | 28 tests passed across two files |
 | `npm run build` | Passed; ten primary routes and article infrastructure compile |
 | `npm run webflow:bundle` | Passed with actual Webflow CLI 2.7.1; client and server bundles generated for 27 declarations |
 
-Tests exercise chosen-contact validation, malformed input, independent form IDs, missing transport, confirmed and rejected delivery, retained values after errors, upload limits, mobile menu focus, service preselection, server-rendered FAQ content, hidden unverified proof, empty CMS state, missing optional images, schema accuracy, canonical-origin validation, social image URLs and JSON-LD escaping.
+Tests exercise chosen-contact validation, malformed input, independent form IDs, missing transport, confirmed and rejected delivery, retained values after errors, upload limits, mobile menu focus, service preselection, server-rendered FAQ content, hidden unverified proof, empty CMS state, complete photo-free service details, missing optional images, schema accuracy, canonical-origin validation, social image URLs and JSON-LD escaping.
 
 The Webflow validation uses an ignored local manifest because this CLI requires an ID for noninteractive bundling. It does not create or import a remote library. See [WEBFLOW.md](WEBFLOW.md).
 
@@ -34,6 +34,7 @@ Browser interaction checks passed:
 - The sticky service topic menu collapses on mobile, closes after a jump, and leaves the destination heading below the bar.
 - Service links preselect the estimate request, visitors can change the selected service, and a new request resets it. Unknown URL values are ignored.
 - Text-only Hero, Service Feature and Service Card variants remove empty photo frames. Nested content inherits readable dark-theme colors; designer link targets are preserved.
+- Service Detail Blocks use a text-led heading and information-panel grid; optional photos add a separate media band and reserve no space when absent.
 - Estimate validation identifies missing fields in text. Only the chosen contact method is required.
 - The unconfigured estimate form clearly says delivery is unavailable and never claims a request was sent. Controlled test values were used; no lead was transmitted.
 

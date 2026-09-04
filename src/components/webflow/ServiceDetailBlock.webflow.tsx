@@ -5,7 +5,7 @@ import { ServiceDetailBlock } from "./ServiceDetailBlock";
 export default declareComponent(ServiceDetailBlock, {
   name: "Service Detail Block",
   description:
-    "Answer-first service section with symptoms, approach and supporting content.",
+    "Answer-first service section with a complete editorial layout whether or not an image is supplied.",
   group: "Services",
   props: {
     number: props.Text({
@@ -57,7 +57,7 @@ export default declareComponent(ServiceDetailBlock, {
       name: "Image",
       group: "Media",
       tooltip:
-        "Select an approved photo from Webflow Assets and set meaningful alt text.",
+        "Optionally add an approved supporting photo. Removing it leaves a complete text-led layout.",
     }),
     imageAlt: props.Text({
       name: "Image description",

@@ -48,40 +48,43 @@ export function ServiceDetailBlock({
         <Heading>{heading}</Heading>
         {answer && <p className="tc-lead">{answer}</p>}
       </div>
-      <div className="tc-detail-columns">
-        <div>
-          {image?.src && (
-            <figure>
-              <Photo image={image} alt={imageAlt} />
-            </figure>
-          )}
-          {body && <p>{body}</p>}
-        </div>
-        <div>
-          {symptoms && (
-            <>
-              <h3>When to consider this service</h3>
-              <ul>
-                {symptoms
-                  .split("\n")
-                  .filter(Boolean)
-                  .map((s, i) => (
-                    <li key={i}>{s}</li>
-                  ))}
-              </ul>
-            </>
-          )}
-          {approach && (
-            <>
-              <h3>What the work involves</h3>
-              <p>{approach}</p>
-            </>
-          )}
-          {children}
-          <Button variant="text" link={ctaLink}>
-            {ctaLabel}
-          </Button>
-        </div>
+      {image?.src && (
+        <figure className="tc-detail-media">
+          <Photo image={image} alt={imageAlt} />
+        </figure>
+      )}
+      <div className="tc-detail-panels">
+        {body && (
+          <div className="tc-detail-panel">
+            <h3>What to know</h3>
+            <p>{body}</p>
+          </div>
+        )}
+        {symptoms && (
+          <div className="tc-detail-panel">
+            <h3>When to consider this service</h3>
+            <ul>
+              {symptoms
+                .split("\n")
+                .filter(Boolean)
+                .map((s, i) => (
+                  <li key={i}>{s}</li>
+                ))}
+            </ul>
+          </div>
+        )}
+        {approach && (
+          <div className="tc-detail-panel">
+            <h3>What the work involves</h3>
+            <p>{approach}</p>
+          </div>
+        )}
+        {children && <div className="tc-detail-panel">{children}</div>}
+      </div>
+      <div className="tc-detail-action">
+        <Button variant="text" link={ctaLink}>
+          {ctaLabel}
+        </Button>
       </div>
     </Section>
   );

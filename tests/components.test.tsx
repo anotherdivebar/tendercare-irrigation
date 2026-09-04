@@ -11,6 +11,7 @@ import { SectionNav } from "../src/components/webflow/SectionNav";
 import { NavLink } from "../src/components/webflow/NavLink";
 import { ServiceCard } from "../src/components/webflow/ServiceCard";
 import { ServiceFeatureSection } from "../src/components/webflow/ServiceFeatureSection";
+import { ServiceDetailBlock } from "../src/components/webflow/ServiceDetailBlock";
 import { publishedArticles } from "../src/content/posts";
 import { faqs } from "../src/content/faqs";
 import {
@@ -99,6 +100,25 @@ it("removes empty photo frames and preserves designer link targets", () => {
   expect(card).toContain('rel="noopener noreferrer"');
   expect(feature).not.toContain("<figure");
   expect(feature).toContain("tc-without-image");
+});
+it("keeps service detail content complete without an optional image", () => {
+  const { container } = render(
+    <ServiceDetailBlock
+      serviceName="Backflow testing"
+      heading="Why does a backflow device need testing?"
+      answer="Testing checks whether the device performs as intended."
+      body="Requirements depend on the water supplier and device."
+      symptoms={"A utility notice\nA device due for testing"}
+      approach="Review the notice and device before scheduling."
+    >
+      <h3>Why it matters</h3>
+      <p>Current records help document the device condition.</p>
+    </ServiceDetailBlock>,
+  );
+  expect(container.querySelector("figure")).toBeNull();
+  expect(container.querySelectorAll(".tc-detail-panel")).toHaveLength(4);
+  expect(screen.getByRole("heading", { name: "What to know" })).toBeTruthy();
+  expect(screen.getByText("Why it matters")).toBeTruthy();
 });
 it("renders FAQ answers into initial HTML", () => {
   const html = renderToStaticMarkup(

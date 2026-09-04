@@ -95,6 +95,8 @@ Declarations provide human-readable names, groups, help text and defaults. Use t
 
 For repeated collections, use **Slots**, not a JSON string or unsupported array prop. Insert Service Cards into a Service Category Grid, FAQ Items into an FAQ Accordion, and Project Images into a Project Gallery. Feature and article slots also accept native Webflow content. Text lists such as service details and communities use one item per line; these fields are described accordingly.
 
+Service Detail Block is text-led so its heading, direct answer and information panels form a complete layout without media. Its optional **Image** prop adds a full-width supporting photo band between the introduction and details; leaving the prop empty does not reserve a blank photo area.
+
 Theme variants: light, cream and dark. Image/text alignment: image-left or image-right. Hero layout: split or compact. FAQ layout: split or full. Keep the Hero to one instance per page because it owns the H1. BlogArticle owns its own H1 and replaces the normal Hero on articles.
 
 Section themes publish inherited `--tc-text`, `--tc-subtle`, `--tc-link` and `--tc-focus` variables so independently imported children keep readable colors across Shadow DOM boundaries. Surface components such as forms reset these variables for their own light background. `/preview/components` is a noindex check of dark nested content and missing-photo layouts; it is not a public content page.
