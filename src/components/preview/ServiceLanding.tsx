@@ -54,7 +54,6 @@ export function ServiceLanding({ category }: { category: ServiceCategory }) {
             body={detail.body}
             symptoms={detail.symptoms}
             approach={detail.approach}
-            image={detail.image}
             theme={index % 2 === 0 ? "light" : "cream"}
             ctaLabel={`Ask about ${detail.name.toLowerCase()}`}
             ctaLink={estimateLink(detail.id)}

@@ -10,7 +10,6 @@ export interface ServiceDetail {
   symptoms: string;
   approach: string;
   benefit: string;
-  image?: ImageAsset;
 }
 export interface ServiceCategory {
   slug: string;
@@ -49,7 +48,6 @@ export const services: ServiceCategory[] = [
           "Planning starts with the water supply, landscape and the way you use the property. The proposed scope can cover zone layout, pipe routing, head placement and controller options, along with utility locating, access, restoration and a system walkthrough.",
         benefit:
           "Good zoning makes everyday watering easier and lets lawn and planting areas run on schedules that fit them.",
-        image: images.install,
       },
       {
         id: "sprinkler-repair",
@@ -66,7 +64,6 @@ export const services: ServiceCategory[] = [
           "Tell us which zones are affected and when the problem shows up. An assessment can trace the issue from the controller and valves to the heads and supply lines. You can review the proposed fix before authorizing the work.",
         benefit:
           "A targeted repair can restore coverage and help reduce unnecessary water loss.",
-        image: images.detail,
       },
       {
         id: "maintenance-plans",
@@ -83,7 +80,6 @@ export const services: ServiceCategory[] = [
           "Start with your water source, number of zones, controller and backflow equipment. Discuss which startup, in-season and winterization services fit the system, then confirm the current scope and availability with TenderCare.",
         benefit:
           "A seasonal plan gives the system regular attention as conditions change.",
-        image: images.field,
       },
     ],
   },
@@ -174,7 +170,6 @@ export const services: ServiceCategory[] = [
           "Start with the existing controller and how you use it. An upgrade should include compatibility checks, zone setup and a clear walkthrough. Weather-based settings still need to reflect the property and any watering restrictions.",
         benefit:
           "Better scheduling can reduce unnecessary watering and make ongoing adjustments more convenient.",
-        image: images.lawn,
       },
       {
         id: "backflow-testing",

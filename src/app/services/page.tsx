@@ -26,11 +26,9 @@ export default function Page() {
         <ServiceFeatureSection
           key={s.slug}
           theme={i % 2 ? "light" : "cream"}
-          alignment={i % 2 ? "image-right" : "image-left"}
           eyebrow={`0${i + 1} / ${s.name}`}
           heading={s.name}
           body={s.intro}
-          image={s.image}
           ctaLabel={`Explore ${s.name.toLowerCase()}`}
           ctaLink={{ href: `/services/${s.slug}` }}
         >
