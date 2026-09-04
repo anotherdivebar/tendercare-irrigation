@@ -8,7 +8,7 @@ import { CTASection } from "../webflow/CTASection";
 import { SectionNav } from "../webflow/SectionNav";
 import { NavLink } from "../webflow/NavLink";
 import { estimateLink } from "../../lib/estimate-context";
-import { FaqPreview, Packages } from "./blocks";
+import { FaqPreview } from "./blocks";
 import { JsonLd, serviceSchema, breadcrumbSchema } from "../../lib/seo";
 export function ServiceLanding({ category }: { category: ServiceCategory }) {
   const path = `/services/${category.slug}`;
@@ -64,11 +64,6 @@ export function ServiceLanding({ category }: { category: ServiceCategory }) {
           </ServiceDetailBlock>
         </div>
       ))}
-      {category.slug === "irrigation-systems" && (
-        <div id="packages">
-          <Packages />
-        </div>
-      )}
       {category.slug === "drainage-solutions" && (
         <ContentSection
           theme="dark"

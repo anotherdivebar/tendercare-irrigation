@@ -81,7 +81,7 @@ For later CI, use the documented `webflow devlink import --no-input` only after 
 | --- | --- | --- |
 | Navigation | Header, NavLink, SectionNav, Breadcrumbs, Footer | Header navigation links; SectionNav topic links; Footer navigation and service links |
 | Content | Hero, TrustBar, ContentSection, FAQAccordion, FAQItem, BlogGrid, BlogCard, BlogArticle | ContentSection content; FAQ questions; blog cards; article body, table of contents, related articles, service CTA |
-| Services | ServiceCategoryGrid, ServiceCard, ServiceFeatureSection, ServiceDetailBlock, ProcessSection, PricingPackages, PackageCard | Category cards; feature supporting content; service detail content; separate city/well package slots |
+| Services | ServiceCategoryGrid, ServiceCard, ServiceFeatureSection, ServiceDetailBlock, ProcessSection | Category cards; feature supporting content; service detail content |
 | Media | ProjectGallery, ProjectImage, BeforeAfterGallery | Gallery images; before/after image inputs |
 | Social Proof | TestimonialSection, ReviewCard | Verified review cards; visibility/verification gates |
 | Conversion | CTASection, ContactSection, ServiceAreaSection | Contact form slot |
@@ -93,11 +93,11 @@ Mobile navigation is contained in Header so it shares one React root and one lis
 
 Declarations provide human-readable names, groups, help text and defaults. Use text fields for copy, Image props for assets, Link props for destinations, Visibility props for optional regions and Variant props for intentional layout/theme choices. Image values are `{src, alt}` and Link values are `{href, target}`; the React interfaces match these current Webflow types.
 
-For repeated collections, use **Slots**, not a JSON string or unsupported array prop. Insert Service Cards into a Service Category Grid, FAQ Items into an FAQ Accordion, Package Cards into the appropriate water-source slot, and Project Images into a Project Gallery. Feature and article slots also accept native Webflow content. Text lists such as package inclusions and communities use one item per line; these fields are described accordingly.
+For repeated collections, use **Slots**, not a JSON string or unsupported array prop. Insert Service Cards into a Service Category Grid, FAQ Items into an FAQ Accordion, and Project Images into a Project Gallery. Feature and article slots also accept native Webflow content. Text lists such as service details and communities use one item per line; these fields are described accordingly.
 
 Theme variants: light, cream and dark. Image/text alignment: image-left or image-right. Hero layout: split or compact. FAQ layout: split or full. Keep the Hero to one instance per page because it owns the H1. BlogArticle owns its own H1 and replaces the normal Hero on articles.
 
-Section themes publish inherited `--tc-text`, `--tc-subtle`, `--tc-link` and `--tc-focus` variables so independently imported children keep readable colors across Shadow DOM boundaries. Surface components such as forms and package cards reset these variables for their own light background. `/preview/components` is a noindex check of dark nested content and missing-photo layouts; it is not a public content page.
+Section themes publish inherited `--tc-text`, `--tc-subtle`, `--tc-link` and `--tc-focus` variables so independently imported children keep readable colors across Shadow DOM boundaries. Surface components such as forms reset these variables for their own light background. `/preview/components` is a noindex check of dark nested content and missing-photo layouts; it is not a public content page.
 
 Nav Link can identify the current page/category from the browser URL without a Next.js dependency. Disable **Identify current page automatically** to control it manually. The initial server snapshot stays stable; URL-derived state is applied after hydration. Ordinary page navigation and browser back/forward are supported; a custom client router must emit a navigation event or supply the manual current-page prop.
 
@@ -105,11 +105,11 @@ For long service pages, add **Section Navigation** immediately after the hero. P
 
 ## Remembering estimate selections
 
-Estimate Form supports a designer-editable **Default service** and **Remember service link selection** toggle. Supported links include `/estimate?service=sprinkler-repair` and `/estimate?service=maintenance-plans&plan=gold&water=well`. The full service ID list is in `src/lib/estimate-context.ts`; package values are `gold`/`silver`, water values are `city`/`well`.
+Estimate Form supports a designer-editable **Default service** and **Remember service link selection** toggle. Supported links include `/estimate?service=sprinkler-repair` and `/estimate?service=maintenance-plans`. The full service ID list is in `src/lib/estimate-context.ts`.
 
-The form only accepts those known values. A query selection takes precedence over the default prop; the visitor can change it. Changing the service removes package context, and starting another request clears the previous selection and validation state. No names, addresses, phone numbers, email addresses or other personal fields are read from URLs or persisted in localStorage. The same implementation runs in Webflow and the preview, with no shared React context required.
+The form only accepts those known values. A query selection takes precedence over the default prop; the visitor can change it. Starting another request clears the previous selection and validation state. No names, addresses, phone numbers, email addresses or other personal fields are read from URLs or persisted in localStorage. The same implementation runs in Webflow and the preview, with no shared React context required.
 
-When a package is selected, multipart submission includes optional `packageName` and `waterSource` fields alongside the normal form fields. The backend must validate these fields and include them in the delivered request. This feature does not provide prices, book an appointment or bypass the unconfigured-endpoint guard. Native Webflow Forms need their own equivalent prefill integration if they replace Estimate Form.
+The selected service is included with the normal multipart form fields. Service preselection does not book an appointment or bypass the unconfigured-endpoint guard. Native Webflow Forms need their own equivalent prefill integration if they replace Estimate Form.
 
 `src/styles/tokens.css` defines color, spacing, typography, container, radius, shadow and transition tokens. The `--tc-*` properties can be supplied on a native page ancestor/host for a site-level override. Copy exact custom-property names when connecting Webflow Variables. Tokens have local defaults; sections do not depend on arbitrary page classes or global IDs.
 
@@ -129,18 +129,18 @@ Use a native Webflow `main` landmark between the shared Header and Footer. Creat
 
 | Route | Compose |
 | --- | --- |
-| `/` | Hero, TrustBar, ServiceCategoryGrid with 3 ServiceCards, ServiceFeatureSection, ProcessSection, PricingPackages, ProjectGallery, ServiceAreaSection, FAQAccordion, CTASection |
+| `/` | Hero, TrustBar, ServiceCategoryGrid with 3 ServiceCards, ServiceFeatureSection, ProcessSection, ProjectGallery, ServiceAreaSection, FAQAccordion, CTASection |
 | `/about` | Breadcrumbs, compact Hero, split ContentSection, ServiceFeatureSection, ProcessSection, ServiceAreaSection, CTASection |
 | `/services` | Breadcrumbs, compact Hero, 3 alternating ServiceFeatureSections with native service-directory links, CTASection |
-| `/services/irrigation-systems` | Breadcrumbs, compact Hero, SectionNav in a sticky native wrapper, 3 ServiceDetailBlocks, PricingPackages, FAQAccordion, CTASection |
+| `/services/irrigation-systems` | Breadcrumbs, compact Hero, SectionNav in a sticky native wrapper, 3 ServiceDetailBlocks, FAQAccordion, CTASection |
 | `/services/drainage-solutions` | Breadcrumbs, compact Hero, SectionNav in a sticky native wrapper, 3 ServiceDetailBlocks, dark ContentSection, FAQAccordion, CTASection |
 | `/services/smart-upgrades` | Breadcrumbs, compact Hero, SectionNav in a sticky native wrapper, 3 ServiceDetailBlocks, FAQAccordion, CTASection |
-| `/faq` | Breadcrumbs, compact Hero, native category links, 10 FAQAccordion groups with FAQItems, CTASection |
+| `/faq` | Breadcrumbs, compact Hero, native category links, 9 FAQAccordion groups with FAQItems, CTASection |
 | `/blog` | Breadcrumbs, compact Hero, BlogGrid/CMS collection list, related FAQ links, CTASection |
-| `/contact` | Breadcrumbs, compact Hero, ContactSection with EstimateForm or native form slot, ServiceAreaSection, FAQAccordion |
+| `/contact` | Breadcrumbs, compact Hero, ContactSection with EstimateForm or native form slot, ServiceAreaSection |
 | `/estimate` | Native two-column introduction with one H1 and EstimateForm; use the preview as the spacing/content reference. Alternatively use a compact Hero followed by ContactSection with the form slot. |
 
-Put fragment IDs such as `sprinkler-repair`, `packages` and FAQ category IDs on **native Webflow wrappers outside the component Shadow DOM**. Browser URL fragments must target document-visible anchors. Do not expect a fragment to find an ID inside an isolated component. Preserve the IDs used by the reference internal links in `src/content/faqs.ts` and `src/content/services.ts`.
+Put fragment IDs such as `sprinkler-repair` and FAQ category IDs on **native Webflow wrappers outside the component Shadow DOM**. Browser URL fragments must target document-visible anchors. Do not expect a fragment to find an ID inside an isolated component. Preserve the IDs used by the reference internal links in `src/content/faqs.ts` and `src/content/services.ts`.
 
 Create one site-wide Header and Footer composition as native Webflow components so approved NAP and navigation are updated consistently across pages.
 
@@ -151,7 +151,7 @@ Choose one of these production implementations:
 1. **Native Webflow Forms:** Place a native Form inside ContactSection or ContentSection’s slot. Style the native fields and use Webflow’s form delivery, spam protection and success/error handling. Do not nest it inside EstimateForm. A form rendered by React in Shadow DOM is not automatically a native Webflow Form.
 2. **Code Component form:** Set `src/webflow/integration.ts` to an approved HTTPS endpoint, then import the updated library. For Next.js preview only, use `NEXT_PUBLIC_ESTIMATE_ENDPOINT`. The endpoint is intentionally not a designer-editable URL so a routine content edit cannot redirect lead data. It contains no API key.
 
-The transport contract is multipart `POST`: `name`, `phone`, `email`, `property`, `service`, `description`, `contactMethod`; optional `packageName`, `waterSource` and repeated `photos` fields. Return HTTP 2xx with JSON `{ "success": true }` **only after accepting the request for reliable delivery/storage**. A non-2xx response or missing explicit confirmation produces an error and preserves the entered values. An empty endpoint sends nothing and displays a clear preview notice.
+The transport contract is multipart `POST`: `name`, `phone`, `email`, `property`, `service`, `description`, `contactMethod`, plus repeated `photos` fields when uploads are enabled. Return HTTP 2xx with JSON `{ "success": true }` **only after accepting the request for reliable delivery/storage**. A non-2xx response or missing explicit confirmation produces an error and preserves the entered values. An empty endpoint sends nothing and displays a clear preview notice.
 
 Only the selected contact method is required. The UI accepts up to three JPEG/PNG/WebP photos, 5 MB each, when photo uploads are enabled. The backend must independently validate all fields, MIME/content and file size, protect against spam/rate abuse, configure exact CORS origins, and handle storage retention. Client-side validation is a usability feature, not a security boundary. Enable uploads only after that backend is tested. No leads or photos are stored in browser localStorage.
 

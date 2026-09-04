@@ -27,7 +27,7 @@ export default declareComponent(WebflowEstimateForm, {
         "No preselection",
         "Sprinkler installation",
         "Sprinkler repair",
-        "Maintenance package",
+        "Irrigation maintenance",
         "Yard drainage",
         "French drain",
         "Downspout extensions",
@@ -42,7 +42,7 @@ export default declareComponent(WebflowEstimateForm, {
       name: "Remember service link selection",
       group: "Form behavior",
       tooltip:
-        "Read supported service, plan and water query parameters from estimate links. Unknown values are ignored; personal data is never read from URLs.",
+        "Read the supported service query parameter from estimate links. Unknown values are ignored; personal data is never read from URLs.",
       defaultValue: true,
     }),
     heading: props.Text({

@@ -1,7 +1,7 @@
 export const estimateServices = [
   { id: "sprinkler-installation", label: "Sprinkler installation" },
   { id: "sprinkler-repair", label: "Sprinkler repair" },
-  { id: "maintenance-plans", label: "Maintenance package" },
+  { id: "maintenance-plans", label: "Irrigation maintenance" },
   { id: "yard-drainage", label: "Yard drainage" },
   { id: "french-drains", label: "French drain" },
   { id: "downspout-extensions", label: "Downspout extensions" },
@@ -12,40 +12,15 @@ export const estimateServices = [
 ] as const;
 export interface EstimateContext {
   service: string;
-  packageName: string;
-  waterSource: string;
 }
 export function getEstimateContext(location: string): EstimateContext {
   const query = new URLSearchParams(location.split("?")[1] || "");
   const service =
     estimateServices.find((item) => item.id === query.get("service"))?.label ||
     "";
-  const plan = query.get("plan"),
-    water = query.get("water");
-  const packageName =
-    service === "Maintenance package"
-      ? plan === "gold"
-        ? "Gold package"
-        : plan === "silver"
-          ? "Silver package"
-          : ""
-      : "";
-  const waterSource = packageName
-    ? water === "city"
-      ? "City water"
-      : water === "well"
-        ? "Well water"
-        : ""
-    : "";
-  return { service, packageName, waterSource };
+  return { service };
 }
-export function estimateLink(
-  service: string,
-  plan?: "gold" | "silver",
-  water?: "city" | "well",
-) {
+export function estimateLink(service: string) {
   const query = new URLSearchParams({ service });
-  if (plan) query.set("plan", plan);
-  if (water) query.set("water", water);
   return { href: `/estimate?${query}` };
 }

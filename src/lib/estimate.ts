@@ -6,8 +6,6 @@ export interface EstimateValues {
   service: string;
   description: string;
   contactMethod: string;
-  packageName?: string;
-  waterSource?: string;
 }
 export type EstimateErrors = Partial<Record<keyof EstimateValues, string>>;
 export const initialEstimate: EstimateValues = {

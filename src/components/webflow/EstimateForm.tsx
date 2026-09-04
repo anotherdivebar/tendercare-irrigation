@@ -50,12 +50,9 @@ export function EstimateForm({
     (context.service ||
       estimateServices.find((item) => item.label === defaultService)?.label ||
       "");
-  const packageName = serviceOverride === undefined ? context.packageName : "";
-  const waterSource = packageName ? context.waterSource : "";
   const requestValues = {
     ...values,
     service,
-    ...(packageName ? { packageName, waterSource } : {}),
   };
   const [errors, setErrors] = useState<EstimateErrors>({});
   const [files, setFiles] = useState<File[]>([]);
@@ -241,16 +238,6 @@ export function EstimateForm({
               <option key={item.id}>{item.label}</option>
             ))}
           </select>
-          {packageName && (
-            <p className="tc-request-context">
-              {packageName}
-              {waterSource && ` · ${waterSource}`}
-              <small>
-                Selected from seasonal care. Choose another service above to
-                change your request.
-              </small>
-            </p>
-          )}
           {errors.service && (
             <span className="tc-field-error" id={`${id}-service-error`}>
               {errors.service}

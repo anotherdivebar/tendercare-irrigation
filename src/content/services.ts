@@ -71,16 +71,16 @@ export const services: ServiceCategory[] = [
       {
         id: "maintenance-plans",
         summary:
-          "Startup, seasonal evaluations and winterization, with packages for city and well water.",
+          "Spring startup, seasonal system checks and winterization based on the property and water source.",
         name: "Maintenance plans",
         heading: "What does a sprinkler maintenance plan cover?",
         answer:
-          "Seasonal maintenance connects spring startup, mid-season checks and winterization. TenderCare’s seasonal packages distinguish city-water systems from well-water systems, with Gold and Silver care options.",
-        body: "Landscapes grow, sprinkler heads shift and watering needs change with the season. Even a system that ran well last year can develop coverage problems, leaks or outdated settings. The right package depends on the water source, zone count and equipment on the property.",
+          "Seasonal irrigation maintenance can connect spring startup, in-season system checks and winterization. The appropriate service plan depends on the water source, zone count, backflow equipment and condition of the system.",
+        body: "Landscapes grow, sprinkler heads shift and watering needs change with the season. Even a system that ran well last year can develop coverage problems, leaks or outdated settings. A maintenance schedule should reflect the equipment and conditions on the property.",
         symptoms:
           "A system coming back into use in spring\nCoverage changing as plants grow\nWatering schedules that never change\nA need to plan ahead for fall shutdown",
         approach:
-          "Start with your water source, number of zones and backflow devices. Both seasonal packages include startup and winterization; Gold includes two mid-season evaluations and Silver includes one. City-water versions also include backflow certification. Ask TenderCare to confirm current scope, eligibility and pricing for your system.",
+          "Start with your water source, number of zones, controller and backflow equipment. Discuss which startup, in-season and winterization services fit the system, then confirm the current scope and availability with TenderCare.",
         benefit:
           "A seasonal plan gives the system regular attention as conditions change.",
         image: images.field,
@@ -188,7 +188,7 @@ export const services: ServiceCategory[] = [
         symptoms:
           "A backflow testing notice from the utility\nA device due for a scheduled test\nA new or repaired backflow assembly",
         approach:
-          "Have the utility notice and device details ready when you request service. Confirm the tester’s qualifications, whether repairs are included and who submits the result. TenderCare’s city-water packages include backflow certification; ask about the current scope when booking.",
+          "Have the utility notice and device details ready when you request service. Confirm the tester’s qualifications, whether repairs are included and who submits the result. Ask TenderCare about the current testing scope when booking.",
         benefit:
           "Keeping testing records current helps you track the device’s condition and respond to your water supplier’s requirements.",
       },

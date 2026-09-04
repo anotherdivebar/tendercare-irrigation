@@ -227,24 +227,6 @@ export const faqs: FAQ[] = [
     linkLabel: "Explore smart controller upgrades",
   },
   {
-    id: "gold-silver",
-    category: "Pricing & packages",
-    question: "What is the difference between Gold and Silver packages?",
-    answer:
-      "Gold includes two mid-season evaluations; Silver includes one. Both include startup and winterization, and city-water versions also include backflow certification. Ask TenderCare to confirm current pricing and whether the standard scope fits your system.",
-    link: "/services/irrigation-systems#packages",
-    linkLabel: "Compare seasonal care packages",
-  },
-  {
-    id: "package-size",
-    category: "Pricing & packages",
-    question: "Does the size of my system affect package pricing?",
-    answer:
-      "Yes, larger or more complex systems may cost more to service. The standard package scope covers up to 12 zones and one PVB backflow device. Ask TenderCare for current pricing for your system.",
-    link: "/estimate",
-    linkLabel: "Request pricing for your system",
-  },
-  {
     id: "area",
     category: "Wichita service area",
     question: "Which communities does TenderCare serve?",

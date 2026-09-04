@@ -1,13 +1,10 @@
 import { FAQAccordion } from "../webflow/FAQAccordion";
 import { FAQItem } from "../webflow/FAQItem";
-import { PricingPackages } from "../webflow/PricingPackages";
-import { PackageCard } from "../webflow/PackageCard";
 import { ProjectGallery } from "../webflow/ProjectGallery";
 import { ProjectImage } from "../webflow/ProjectImage";
 import { faqs, type FAQ } from "../../content/faqs";
 import { images } from "../../content/assets";
 import { JsonLd, faqSchema } from "../../lib/seo";
-import { estimateLink } from "../../lib/estimate-context";
 export function FaqItems({ items }: { items: FAQ[] }) {
   return items.map((f) => (
     <FAQItem
@@ -34,48 +31,6 @@ export function FaqPreview({
       </FAQAccordion>
       <JsonLd data={faqSchema(items)} />
     </>
-  );
-}
-export function Packages() {
-  const cards = (city: boolean) => (
-    <>
-      <PackageCard
-        name="Gold package"
-        ctaLink={estimateLink(
-          "maintenance-plans",
-          "gold",
-          city ? "city" : "well",
-        )}
-        featured
-        description={
-          city
-            ? "Seasonal care for city-water systems."
-            : "Seasonal care for well-water systems."
-        }
-        features={`Spring startup\n${city ? "Backflow certification\n" : ""}Two mid-season evaluations\nWinterization`}
-      />
-      <PackageCard
-        name="Silver package"
-        ctaLink={estimateLink(
-          "maintenance-plans",
-          "silver",
-          city ? "city" : "well",
-        )}
-        description={
-          city
-            ? "The essentials for city-water systems."
-            : "The essentials for well-water systems."
-        }
-        features={`Spring startup\n${city ? "Backflow certification\n" : ""}One mid-season evaluation\nWinterization`}
-      />
-    </>
-  );
-  return (
-    <PricingPackages
-      cityWater={cards(true)}
-      wellWater={cards(false)}
-      note="Discuss current inclusions, pricing and availability with TenderCare. Systems above 12 zones, additional backflow devices or multiple controllers may require a different scope."
-    />
   );
 }
 export function FieldGallery() {

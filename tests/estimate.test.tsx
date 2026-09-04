@@ -27,11 +27,11 @@ const valid = {
   service: "Sprinkler repair",
 };
 describe("Estimate request", () => {
-  it("carries package context into the submitted request and lets the visitor change it", async () => {
+  it("carries service context into the submitted request and resets it for a new request", async () => {
     window.history.replaceState(
       {},
       "",
-      estimateLink("maintenance-plans", "gold", "well").href,
+      estimateLink("maintenance-plans").href,
     );
     const fetchMock = vi
       .fn()
@@ -41,8 +41,7 @@ describe("Estimate request", () => {
     expect(
       (screen.getByLabelText("What can we help with? *") as HTMLSelectElement)
         .value,
-    ).toBe("Maintenance package");
-    expect(screen.getByText("Gold package · Well water")).toBeTruthy();
+    ).toBe("Irrigation maintenance");
     for (const [label, value] of [
       ["Your name *", valid.name],
       ["Email *", valid.email],
@@ -54,51 +53,43 @@ describe("Estimate request", () => {
     );
     await screen.findByRole("status");
     const sent = fetchMock.mock.calls[0][1].body as FormData;
-    expect(sent.get("service")).toBe("Maintenance package");
-    expect(sent.get("packageName")).toBe("Gold package");
-    expect(sent.get("waterSource")).toBe("Well water");
+    expect(sent.get("service")).toBe("Irrigation maintenance");
     await userEvent.click(
       screen.getByRole("button", { name: "Start another request" }),
     );
-    expect(screen.queryByText("Gold package · Well water")).toBeNull();
     expect(
       (screen.getByLabelText("What can we help with? *") as HTMLSelectElement)
         .value,
     ).toBe("");
   });
-  it("discards package context when the selected service changes", async () => {
+  it("lets the visitor change a service selected from a link", async () => {
     window.history.replaceState(
       {},
       "",
-      estimateLink("maintenance-plans", "silver", "city").href,
+      estimateLink("maintenance-plans").href,
     );
     render(<EstimateForm />);
     await userEvent.selectOptions(
       screen.getByLabelText("What can we help with? *"),
       "Sprinkler repair",
     );
-    expect(screen.queryByText("Silver package · City water")).toBeNull();
+    expect(
+      (screen.getByLabelText("What can we help with? *") as HTMLSelectElement)
+        .value,
+    ).toBe("Sprinkler repair");
   });
   it("accepts only known request context and never copies personal fields from URLs", () => {
     expect(
       getEstimateContext("/estimate?service=sprinkler-repair&name=ignored"),
-    ).toEqual({
-      service: "Sprinkler repair",
-      packageName: "",
-      waterSource: "",
-    });
+    ).toEqual({ service: "Sprinkler repair" });
     expect(
-      getEstimateContext("/estimate?service=unknown&plan=gold&water=city"),
-    ).toEqual({ service: "", packageName: "", waterSource: "" });
+      getEstimateContext("/estimate?service=unknown&name=ignored"),
+    ).toEqual({ service: "" });
     expect(
       getEstimateContext(
-        "/estimate?service=maintenance-plans&plan=__proto__&water=constructor",
+        "/estimate?service=maintenance-plans&email=ignored@example.com",
       ),
-    ).toEqual({
-      service: "Maintenance package",
-      packageName: "",
-      waterSource: "",
-    });
+    ).toEqual({ service: "Irrigation maintenance" });
   });
   it("supports an editable default and disabling URL preselection", () => {
     window.history.replaceState({}, "", estimateLink("winterization").href);

@@ -6,7 +6,6 @@ import { ServiceFeatureSection } from "../components/webflow/ServiceFeatureSecti
 import { ProcessSection } from "../components/webflow/ProcessSection";
 import { CTASection } from "../components/webflow/CTASection";
 import {
-  Packages,
   FieldGallery,
   FaqPreview,
 } from "../components/preview/blocks";
@@ -85,7 +84,6 @@ export default function Home() {
         </p>
       </ServiceFeatureSection>
       <ProcessSection />
-      <Packages />
       <FieldGallery />
       <ServiceAreaSection />
       <FaqPreview />

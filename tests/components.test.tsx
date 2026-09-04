@@ -2,7 +2,6 @@ import { afterEach, expect, it } from "vitest";
 import { cleanup, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { renderToStaticMarkup } from "react-dom/server";
-import { PricingPackages } from "../src/components/webflow/PricingPackages";
 import { FAQItem } from "../src/components/webflow/FAQItem";
 import { Header } from "../src/components/webflow/Header";
 import { ReviewCard } from "../src/components/webflow/ReviewCard";
@@ -100,22 +99,6 @@ it("removes empty photo frames and preserves designer link targets", () => {
   expect(card).toContain('rel="noopener noreferrer"');
   expect(feature).not.toContain("<figure");
   expect(feature).toContain("tc-without-image");
-});
-it("switches water-source content without changing the page", async () => {
-  render(
-    <PricingPackages
-      cityWater={<p>City package test</p>}
-      wellWater={<p>Well package test</p>}
-    />,
-  );
-  await userEvent.click(screen.getByRole("button", { name: "Well water" }));
-  expect(screen.queryByText("City package test")).toBeNull();
-  expect(screen.getByText("Well package test")).toBeTruthy();
-  expect(
-    screen
-      .getByRole("button", { name: "Well water" })
-      .getAttribute("aria-pressed"),
-  ).toBe("true");
 });
 it("renders FAQ answers into initial HTML", () => {
   const html = renderToStaticMarkup(

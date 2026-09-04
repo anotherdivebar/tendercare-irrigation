@@ -2,7 +2,7 @@
 
 React + TypeScript website sections for **Webflow Code Components / DevLink import**. Git owns the custom components. Webflow owns page composition, CMS content, page settings and the production publishing workflow. Next.js is the reference preview, not the production CMS.
 
-The project includes all 10 requested primary pages, three detailed service categories, an unpublished article template, 29 registered components, responsive local photography, an editable design system, and accessible forms and interactions. Service and package links carry their selection into the estimate form; long service pages have compact sticky topic navigation.
+The project includes all 10 requested primary pages, three detailed service categories, an unpublished article template, 27 registered components, responsive local photography, an editable design system, and accessible forms and interactions. Service links carry their selection into the estimate form; long service pages have compact sticky topic navigation.
 
 ## Start
 

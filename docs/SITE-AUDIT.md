@@ -29,9 +29,9 @@ Phone `(316) 555-1234` is a placeholder. The email, Derby address, stated hours 
 
 ## Rebuild decisions
 
-Preserve the legitimate service hierarchy and clearly stated package structure. Replace disconnected template content with property-focused explanations, real routes, descriptive internal links, answer-first FAQs and a minimal inquiry flow.
+Preserve the legitimate service hierarchy. The source package structure was initially documented but was later removed from the rebuild at the client’s direction. Replace disconnected template content with property-focused explanations, real routes, descriptive internal links, answer-first FAQs and a minimal inquiry flow.
 
-Use warm ivory, deep green, subtle burgundy, restrained rules and a consistent architectural grid. Vary composition with service directory rows, image/text features, package comparisons, field photography and structured editorial content.
+Use warm ivory, deep green, subtle burgundy, restrained rules and a consistent architectural grid. Vary composition with service directory rows, image/text features, field photography and structured editorial content.
 
 Use the 15 user-supplied photos from `F:\TenderCare Irrigation`. The preview uses irrigation and fieldwork images with literal alt descriptions; no made-up locations, dates, clients, completion statistics or project results. The available images do not establish a matched before/after pair or a completed drainage project. Drainage pages use general fieldwork imagery and do not claim that the pictured irrigation work is a drainage installation.
 

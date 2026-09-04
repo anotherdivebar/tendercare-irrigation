@@ -17,8 +17,7 @@ Edit `src/content/business.ts` for the preview; use the same approved data in We
 ## Services and commercial terms
 
 - [ ] Approve the rewritten service and FAQ copy with the person responsible for field operations.
-- [ ] Confirm Gold/Silver city/well package inclusions. The preview preserves startup, one/two mid-season evaluations, winterization, and city-water backflow certification from the source summaries.
-- [ ] Obtain current package prices, eligibility, zone/device limits, additional charges and exclusions.
+- [ ] Confirm which spring startup, in-season maintenance and winterization services are currently offered and how they should be described.
 - [ ] Specifically verify the source’s **15% parts discount** and **72-hour repair turnaround**. These are not published in the rebuild.
 - [ ] Verify backflow testing qualifications/registration and how reporting is handled. Do not imply certification from the source’s generic service menu.
 - [ ] Confirm estimate policy, diagnostic fees if applicable, repair authorization process, scheduling, guarantees and warranties. No invented prices or guarantees are included.
