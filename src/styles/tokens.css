@@ -1,0 +1,28 @@
+:root,
+:host {
+  --tc-ink: #202c28;
+  --tc-green: #24483d;
+  --tc-deep: #16382d;
+  --tc-sage: #d9e0cf;
+  --tc-cream: #f0eee7;
+  --tc-paper: #fcfbf7;
+  --tc-white: #fff;
+  --tc-muted: #606a63;
+  --tc-line: #d8dcd1;
+  --tc-burgundy: #7d2931;
+  --tc-accent: #d5df91;
+  --tc-space-1: 0.5rem;
+  --tc-space-2: 1rem;
+  --tc-space-3: 1.5rem;
+  --tc-space-4: 2rem;
+  --tc-space-5: 3rem;
+  --tc-space-6: 4.5rem;
+  --tc-space-7: 6.5rem;
+  --tc-radius: 3px;
+  --tc-display: "Manrope Variable", "Manrope", Arial, sans-serif;
+  --tc-body: "DM Sans Variable", "DM Sans", Arial, sans-serif;
+  --tc-container: 1280px;
+  --tc-shadow: 0 12px 40px #16382d0a;
+  --tc-transition: 180ms ease;
+  --tc-gutter: clamp(20px, 4.5vw, 72px);
+}

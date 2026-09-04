@@ -1,0 +1,40 @@
+{
+  "name": "tendercare-webflow-components",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack --hostname 127.0.0.1",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "webflow:bundle": "node scripts/bundle-webflow.mjs",
+    "webflow:import": "webflow devlink import"
+  },
+  "dependencies": {
+    "next": "16.3.4",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@webflow/webflow-cli": "2.7.1",
+    "@webflow/react": "2.3.0",
+    "@webflow/data-types": "2.3.0",
+    "typescript": "^5.9.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.3.4",
+    "vitest": "^3.2.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.0",
+    "jsdom": "^26.1.0",
+    "@fontsource-variable/dm-sans": "^5.2.0",
+    "@fontsource-variable/manrope": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

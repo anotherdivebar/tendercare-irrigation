@@ -1,0 +1,187 @@
+{
+  "checkedAt": "2026-09-04T17:29:24.665Z",
+  "base": "http://127.0.0.1:3001",
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "h1Count": 1,
+      "title": "Wichita Irrigation, Sprinkler & Drainage Services | TenderCare Irrigation",
+      "description": "Thoughtful irrigation, sprinkler repair, yard drainage and seasonal care for Wichita and the surrounding metro. Request a free estimate from TenderCare.",
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Wichita Irrigation, Sprinkler & Drainage Services",
+      "schemaTypes": [
+        [
+          "ProfessionalService",
+          "Organization"
+        ],
+        "FAQPage"
+      ],
+      "duplicateIds": 0
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "h1Count": 1,
+      "title": "About Our Wichita Irrigation Company | TenderCare Irrigation",
+      "description": "Get to know TenderCare Irrigation’s practical approach to sprinkler systems, drainage and seasonal landscape care in the Wichita metro.",
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "ogTitle": "About Our Wichita Irrigation Company",
+      "schemaTypes": [
+        [
+          "ProfessionalService",
+          "Organization"
+        ]
+      ],
+      "duplicateIds": 0
+    },
+    {
+      "route": "/services",
+      "status": 200,
+      "h1Count": 1,
+      "title": "Irrigation & Drainage Services in Wichita | TenderCare Irrigation",
+      "description": "Explore TenderCare’s sprinkler installation, repairs, maintenance, drainage solutions, smart controllers, backflow testing and winterization in Wichita.",
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Irrigation & Drainage Services in Wichita",
+      "schemaTypes": [
+        [
+          "ProfessionalService",
+          "Organization"
+        ]
+      ],
+      "duplicateIds": 0
+    },
+    {
+      "route": "/services/irrigation-systems",
+      "status": 200,
+      "h1Count": 1,
+      "title": "Irrigation & Sprinkler Systems in Wichita, KS | TenderCare Irrigation",
+      "description": "Sprinkler installation, repair and maintenance in Wichita. Explore practical irrigation solutions and seasonal care from TenderCare Irrigation.",
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Irrigation & Sprinkler Systems in Wichita, KS",
+      "schemaTypes": [
+        [
+          "ProfessionalService",
+          "Organization"
+        ],
+        "FAQPage",
+        "Service"
+      ],
+      "duplicateIds": 0
+    },
+    {
+      "route": "/services/drainage-solutions",
+      "status": 200,
+      "h1Count": 1,
+      "title": "Yard Drainage & French Drains in Wichita, KS | TenderCare Irrigation",
+      "description": "Explore yard drainage, French drains and downspout extensions in Wichita. Understand standing water and request a property assessment from TenderCare.",
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Yard Drainage & French Drains in Wichita, KS",
+      "schemaTypes": [
+        [
+          "ProfessionalService",
+          "Organization"
+        ],
+        "FAQPage",
+        "Service"
+      ],
+      "duplicateIds": 0
+    },
+    {
+      "route": "/services/smart-upgrades",
+      "status": 200,
+      "h1Count": 1,
+      "title": "Smart Controllers & Sprinkler Winterization in Wichita | TenderCare Irrigation",
+      "description": "Smart irrigation controller upgrades, backflow testing and sprinkler winterization for the Wichita metro. Explore seasonal system care with TenderCare.",
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Smart Controllers & Sprinkler Winterization in Wichita",
+      "schemaTypes": [
+        [
+          "ProfessionalService",
+          "Organization"
+        ],
+        "FAQPage",
+        "Service"
+      ],
+      "duplicateIds": 0
+    },
+    {
+      "route": "/faq",
+      "status": 200,
+      "h1Count": 1,
+      "title": "Wichita Irrigation & Drainage FAQs | TenderCare Irrigation",
+      "description": "Clear answers about sprinkler repairs, installation, drainage, maintenance plans, smart controllers, backflow testing and winterization in Wichita.",
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Wichita Irrigation & Drainage FAQs",
+      "schemaTypes": [
+        [
+          "ProfessionalService",
+          "Organization"
+        ],
+        "FAQPage"
+      ],
+      "duplicateIds": 0
+    },
+    {
+      "route": "/blog",
+      "status": 200,
+      "h1Count": 1,
+      "title": "Irrigation Resources for Wichita Homeowners | TenderCare Irrigation",
+      "description": "TenderCare’s resource center for irrigation and drainage. Find useful FAQs now and future guides on sprinkler care, winterization and smart watering.",
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Irrigation Resources for Wichita Homeowners",
+      "schemaTypes": [
+        [
+          "ProfessionalService",
+          "Organization"
+        ]
+      ],
+      "duplicateIds": 0
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "h1Count": 1,
+      "title": "Contact TenderCare Irrigation in Wichita | TenderCare Irrigation",
+      "description": "Contact TenderCare about irrigation, sprinkler repair, drainage or seasonal service in Wichita. Share your property details and ask about availability.",
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Contact TenderCare Irrigation in Wichita",
+      "schemaTypes": [
+        [
+          "ProfessionalService",
+          "Organization"
+        ],
+        "FAQPage"
+      ],
+      "duplicateIds": 0
+    },
+    {
+      "route": "/estimate",
+      "status": 200,
+      "h1Count": 1,
+      "title": "Request a Free Irrigation Estimate in Wichita | TenderCare Irrigation",
+      "description": "Tell TenderCare about your Wichita-area irrigation or drainage project. Request a free estimate for sprinkler installation, repair or seasonal care.",
+      "canonical": null,
+      "robots": "noindex, nofollow",
+      "ogTitle": "Request a Free Irrigation Estimate in Wichita",
+      "schemaTypes": [
+        [
+          "ProfessionalService",
+          "Organization"
+        ]
+      ],
+      "duplicateIds": 0
+    }
+  ],
+  "imageCount": 8,
+  "failures": []
+}

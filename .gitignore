@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+dist/
+.env*
+!.env.example
+*.tsbuildinfo
+coverage/
+.webflow/
+.webflow.local.json
+npm-debug.log*
+docs/qa/*.report.html
+docs/qa/*.report.json

@@ -1,0 +1,50 @@
+@import "../styles/tokens.css";
+@import "../styles/components.css";
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+body {
+  margin: 0;
+  background: var(--tc-paper);
+}
+.skip-link {
+  position: absolute;
+  left: 20px;
+  top: -80px;
+  z-index: 100;
+  background: white;
+  color: #16382d;
+  padding: 14px 20px;
+  font-family: Arial, sans-serif;
+}
+.skip-link:focus {
+  top: 12px;
+}
+main:focus {
+  outline: none;
+}
+::selection {
+  background: #d5df91;
+  color: #16382d;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@font-face {
+  font-family: "Manrope Variable";
+  font-style: normal;
+  font-weight: 200 800;
+  font-display: swap;
+  src: url(/fonts/manrope-latin.woff2) format("woff2");
+}
+@font-face {
+  font-family: "DM Sans Variable";
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: swap;
+  src: url(/fonts/dm-sans-latin.woff2) format("woff2");
+}

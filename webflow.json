@@ -1,0 +1,7 @@
+{
+  "library": {
+    "name": "TenderCare — Website Sections",
+    "components": ["./src/components/webflow/**/*.webflow.tsx"],
+    "globals": "./src/webflow/globals.ts"
+  }
+}
