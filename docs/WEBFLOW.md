@@ -13,7 +13,7 @@ This is a React + TypeScript **Code Component import library**, with a Next.js r
 | Tests, local preview and bundle validation | CMS collections, CMS item publishing and editorial updates |
 | Integration code and release history | Domain, hosting, sitemap, redirects, analytics and publish controls |
 
-`src/components/webflow` contains the 29 importable components. `src/components/ui` contains internal primitives; none are registered independently. `src/components/preview` composes reference content for Next.js only and is not imported. Shared components do not import Next.js routing, image or server APIs. No React Server Component is part of the Webflow library.
+`src/components/webflow` contains the Webflow-facing components; 27 declaration files are registered for import. `src/components/ui` contains internal primitives; none are registered independently. `src/components/preview` composes reference content for Next.js only and is not imported. Shared components do not import Next.js routing, image or server APIs. No React Server Component is part of the Webflow library.
 
 ## Current documentation and versions
 
