@@ -17,7 +17,7 @@ This is a React + TypeScript **Code Component import library**, with a Next.js r
 
 ## Current documentation and versions
 
-Reviewed September 4, 2026:
+Reviewed September 8, 2026:
 
 - [Import quick start](https://developers.webflow.com/code-components/importing/quick-start)
 - [Component declarations](https://developers.webflow.com/code-components/define-code-component)
@@ -64,7 +64,7 @@ Client and server bundles are generated in `dist/Client` and `dist/Server`. The 
 In a developer terminal, from the source repository:
 
 ```sh
-npx webflow devlink import --input
+npm run webflow:import
 ```
 
 The CLI checks workspace authentication and opens the workspace authorization flow if needed. Select the intended workspace, complete authorization, review the component changes and confirm the import. Workspace credentials belong in the CLI’s documented environment/credential storage, never in Git or browser-visible component code.
