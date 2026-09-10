@@ -14,6 +14,7 @@ import { ServiceFeatureSection } from "../src/components/webflow/ServiceFeatureS
 import { ServiceDetailBlock } from "../src/components/webflow/ServiceDetailBlock";
 import { publishedArticles } from "../src/content/posts";
 import { faqs } from "../src/content/faqs";
+import { services } from "../src/content/services";
 import {
   businessSchema,
   absoluteImageUrl,
@@ -52,7 +53,6 @@ it("opens the Services submenu and keeps every category link accurate", async ()
       "All services",
       "Irrigation systems",
       "Drainage solutions",
-      "Smart & seasonal services",
     ].map((label) =>
       screen.getByRole("link", { name: label }).getAttribute("href"),
     ),
@@ -60,7 +60,6 @@ it("opens the Services submenu and keeps every category link accurate", async ()
     "/services",
     "/services/irrigation-systems",
     "/services/drainage-solutions",
-    "/services/smart-upgrades",
   ]);
   expect(
     screen
@@ -154,8 +153,27 @@ it("allows a hero without photography or optional CTAs", () => {
 it("does not expose unpublished articles", () => {
   expect(publishedArticles()).toEqual([]);
 });
+it("matches the client-approved service architecture", () => {
+  expect(services.map((category) => category.slug)).toEqual([
+    "irrigation-systems",
+    "drainage-solutions",
+  ]);
+  expect(services[0].details.map((service) => service.id)).toEqual([
+    "sprinkler-installation",
+    "sprinkler-repair",
+    "maintenance-plans",
+    "controller-upgrades",
+    "backflow-testing",
+    "winterization",
+  ]);
+  expect(services[1].details.map((service) => service.id)).toEqual([
+    "downspout-extensions",
+    "sump-pump-extensions",
+  ]);
+});
 it("omits unverified business attributes from schema", () => {
   const schema = businessSchema();
+  expect(schema).toHaveProperty("foundingDate", "1982");
   expect(schema).not.toHaveProperty("telephone");
   expect(schema).not.toHaveProperty("address");
   expect(schema).not.toHaveProperty("aggregateRating");

@@ -64,6 +64,7 @@ export function businessSchema(origin = siteOrigin) {
     "@context": "https://schema.org",
     "@type": ["ProfessionalService", "Organization"],
     name: business.name,
+    foundingDate: String(business.foundingYear),
     ...(origin ? { "@id": `${origin}/#business`, url: origin } : {}),
     ...(business.phone ? { telephone: business.phone } : {}),
     ...(business.email ? { email: business.email } : {}),

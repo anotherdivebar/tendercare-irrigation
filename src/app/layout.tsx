@@ -9,7 +9,7 @@ import { business, navigation } from "../content/business";
 export const metadata: Metadata = {
   title: "TenderCare Irrigation | Wichita, KS",
   description:
-    "Irrigation, drainage and seasonal sprinkler care for Wichita and the surrounding metro.",
+    "Irrigation systems, seasonal sprinkler care, and downspout or sump pump extensions for Wichita and the surrounding metro.",
   robots: { index: false, follow: false },
 };
 export const viewport: Viewport = {
@@ -82,7 +82,6 @@ export default function Layout({ children }: { children: ReactNode }) {
             <>
               <a href="/services/irrigation-systems">Irrigation systems</a>
               <a href="/services/drainage-solutions">Drainage solutions</a>
-              <a href="/services/smart-upgrades">Smart & seasonal services</a>
             </>
           }
         />

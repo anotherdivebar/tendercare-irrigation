@@ -7,7 +7,7 @@ import { business } from "../../content/business";
 import { pageMetadata } from "../../lib/seo";
 export const metadata = pageMetadata(
   "Contact TenderCare Irrigation in Wichita",
-  "Contact TenderCare about sprinkler installation, irrigation repair, yard drainage or seasonal service in the Wichita metro.",
+  "Contact TenderCare about sprinkler installation, repair, winterization, downspout extensions or sump pump extensions in the Wichita metro.",
   "/contact",
 );
 export default function Page() {
@@ -19,7 +19,7 @@ export default function Page() {
         eyebrow="Contact TenderCare"
         heading="Tell us what’s happening on your property."
         accent=""
-        body="Need a repair, planning a new system or dealing with standing water? Send the basics and the best way to reach you."
+        body="Need a repair, planning a new system or moving roof or sump water farther from the house? Send the basics and the best way to reach you."
         ctaLabel="Get a free estimate"
       />
       <ContactSection

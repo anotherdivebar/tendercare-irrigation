@@ -25,8 +25,6 @@ export interface HeaderProps {
   irrigationLink?: LinkValue;
   drainageLabel?: string;
   drainageLink?: LinkValue;
-  seasonalLabel?: string;
-  seasonalLink?: LinkValue;
   links?: ReactNode;
 }
 export function Header({
@@ -46,8 +44,6 @@ export function Header({
   irrigationLink = { href: "/services/irrigation-systems" },
   drainageLabel = "Drainage solutions",
   drainageLink = { href: "/services/drainage-solutions" },
-  seasonalLabel = "Smart & seasonal services",
-  seasonalLink = { href: "/services/smart-upgrades" },
   links,
 }: HeaderProps) {
   const [open, setOpen] = useState(false);
@@ -62,7 +58,6 @@ export function Header({
     { label: allServicesLabel, link: allServicesLink },
     { label: irrigationLabel, link: irrigationLink },
     { label: drainageLabel, link: drainageLink },
-    { label: seasonalLabel, link: seasonalLink },
   ].filter((item) => item.label && item.link?.href);
   const closeSubmenus = () => {
     navigation.current

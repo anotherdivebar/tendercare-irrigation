@@ -7,7 +7,6 @@ export const primaryRoutes = [
   "/services",
   "/services/irrigation-systems",
   "/services/drainage-solutions",
-  "/services/smart-upgrades",
   "/faq",
   "/blog",
   "/contact",

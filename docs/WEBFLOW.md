@@ -87,7 +87,7 @@ For later CI, use the documented `webflow devlink import --no-input` only after 
 | Conversion | CTASection, ContactSection, ServiceAreaSection | Contact form slot |
 | Forms | EstimateForm | Editable copy and optional photo upload UI; code-owned endpoint |
 
-Mobile navigation is contained in Header so it shares one React root and one list of links. Header also owns the Services disclosure, including the overview, irrigation, drainage, and smart/seasonal destinations. Configure those four labels and links in the **Services menu** property group, then use the **Other navigation links** slot for About, Resources, FAQ, and Contact. A second independently imported MobileNav would require cross-root coordination and duplicate content. The internal Button, Container, Heading, Eyebrow, Section, Arrow and Photo helpers are intentionally not exposed.
+Mobile navigation is contained in Header so it shares one React root and one list of links. Header also owns the Services disclosure, including the overview, irrigation and drainage destinations. Configure those three labels and links in the **Services menu** property group, then use the **Other navigation links** slot for About, Resources, FAQ, and Contact. A second independently imported MobileNav would require cross-root coordination and duplicate content. The internal Button, Container, Heading, Eyebrow, Section, Arrow and Photo helpers are intentionally not exposed.
 
 ## Editing content and appearance
 
@@ -131,12 +131,11 @@ Use a native Webflow `main` landmark between the shared Header and Footer. Creat
 
 | Route | Compose |
 | --- | --- |
-| `/` | Hero, TrustBar, ServiceCategoryGrid with 3 ServiceCards, ServiceFeatureSection, ProcessSection, ProjectGallery, ServiceAreaSection, FAQAccordion, CTASection |
+| `/` | Hero, TrustBar, ServiceCategoryGrid with 2 ServiceCards, ServiceFeatureSection, ProcessSection, ProjectGallery, ServiceAreaSection, FAQAccordion, CTASection |
 | `/about` | Breadcrumbs, compact Hero, split ContentSection, ServiceFeatureSection, ProcessSection, ServiceAreaSection, CTASection |
-| `/services` | Breadcrumbs, compact Hero, 3 alternating ServiceFeatureSections with native service-directory links, CTASection |
-| `/services/irrigation-systems` | Breadcrumbs, compact Hero, SectionNav in a sticky native wrapper, 3 ServiceDetailBlocks, FAQAccordion, CTASection |
-| `/services/drainage-solutions` | Breadcrumbs, compact Hero, SectionNav in a sticky native wrapper, 3 ServiceDetailBlocks, dark ContentSection, FAQAccordion, CTASection |
-| `/services/smart-upgrades` | Breadcrumbs, compact Hero, SectionNav in a sticky native wrapper, 3 ServiceDetailBlocks, FAQAccordion, CTASection |
+| `/services` | Breadcrumbs, compact Hero, 2 alternating ServiceFeatureSections with native service-directory links, CTASection |
+| `/services/irrigation-systems` | Breadcrumbs, compact Hero, SectionNav in a sticky native wrapper, 6 ServiceDetailBlocks, FAQAccordion, CTASection |
+| `/services/drainage-solutions` | Breadcrumbs, compact Hero, SectionNav in a sticky native wrapper, 2 ServiceDetailBlocks, dark ContentSection, FAQAccordion, CTASection |
 | `/faq` | Breadcrumbs, compact Hero, native category links, 9 FAQAccordion groups with FAQItems, CTASection |
 | `/blog` | Breadcrumbs, compact Hero, BlogGrid/CMS collection list, related FAQ links, CTASection |
 | `/contact` | Breadcrumbs, compact Hero, ContactSection with EstimateForm or native form slot, ServiceAreaSection |
@@ -145,6 +144,8 @@ Use a native Webflow `main` landmark between the shared Header and Footer. Creat
 Put fragment IDs such as `sprinkler-repair` and FAQ category IDs on **native Webflow wrappers outside the component Shadow DOM**. Browser URL fragments must target document-visible anchors. Do not expect a fragment to find an ID inside an isolated component. Preserve the IDs used by the reference internal links in `src/content/faqs.ts` and `src/content/services.ts`.
 
 Create one site-wide Header and Footer composition as native Webflow components so approved NAP and navigation are updated consistently across pages.
+
+Configure a permanent Webflow redirect from `/services/smart-upgrades` to `/services/irrigation-systems`. The Next.js reference preview includes the same redirect, but DevLink does not transfer routing rules.
 
 ## Form boundary
 

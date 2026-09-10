@@ -4,7 +4,7 @@ import { Container, Eyebrow, Heading } from "../../components/ui";
 import { pageMetadata } from "../../lib/seo";
 export const metadata = pageMetadata(
   "Request a Free Irrigation Estimate in Wichita",
-  "Request a free estimate for sprinkler installation, irrigation repair, yard drainage, controller upgrades or seasonal service in the Wichita metro.",
+  "Request an estimate for sprinkler installation, irrigation repair, controller upgrades, winterization, or downspout and sump pump extensions in Wichita.",
   "/estimate",
 );
 export default function Page() {

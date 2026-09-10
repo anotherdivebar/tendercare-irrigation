@@ -1,6 +1,6 @@
 # Verification report
 
-Verified September 4, 2026. This report covers the React component library and the local Next.js reference site. A published Webflow installation requires the separate launch checks below.
+Verified September 10, 2026. This report covers the React component library and the local Next.js reference site. A published Webflow installation requires the separate launch checks below.
 
 ## Build and integration checks
 
@@ -8,27 +8,28 @@ Verified September 4, 2026. This report covers the React component library and t
 | --- | --- |
 | `npm run lint` | Passed |
 | `npm run typecheck` | Passed |
-| `npm test` | 28 tests passed across two files |
-| `npm run build` | Passed; ten primary routes and article infrastructure compile |
+| `npm test` | 29 tests passed across two files |
+| `npm run build` | Passed; nine primary routes and article infrastructure compile |
 | `npm run webflow:bundle` | Passed with actual Webflow CLI 2.7.1; client and server bundles generated for 27 declarations |
 
-Tests exercise chosen-contact validation, malformed input, independent form IDs, missing transport, confirmed and rejected delivery, retained values after errors, upload limits, mobile menu focus, service preselection, server-rendered FAQ content, hidden unverified proof, empty CMS state, complete photo-free service details, missing optional images, schema accuracy, canonical-origin validation, social image URLs and JSON-LD escaping.
+Tests exercise chosen-contact validation, malformed input, independent form IDs, missing transport, confirmed and rejected delivery, retained values after errors, upload limits, mobile menu focus, service preselection, the client-approved service hierarchy, server-rendered FAQ content, hidden unverified proof, empty CMS state, complete photo-free service details, missing optional images, verified founding-date schema, canonical-origin validation, social image URLs and JSON-LD escaping.
 
 The Webflow validation uses an ignored local manifest because this CLI requires an ID for noninteractive bundling. It does not create or import a remote library. See [WEBFLOW.md](WEBFLOW.md).
 
 ## Route and responsive inspection
 
-All ten primary routes were inspected: `/`, `/about`, `/services`, `/services/irrigation-systems`, `/services/drainage-solutions`, `/services/smart-upgrades`, `/faq`, `/blog`, `/contact` and `/estimate`. The isolated `/preview/article` and `/preview/components` routes were inspected as well.
+All nine primary routes were inspected: `/`, `/about`, `/services`, `/services/irrigation-systems`, `/services/drainage-solutions`, `/faq`, `/blog`, `/contact` and `/estimate`. The isolated `/preview/article` and `/preview/components` routes were inspected as well. The retired `/services/smart-upgrades` route returns a permanent redirect to `/services/irrigation-systems`.
 
-The second-pass browser layout sweep covered **320, 375, 390, 430, 768, 1024, 1280 and 1440 pixels** across those twelve routes: 96 viewport/route combinations. No horizontal overflow, overflowing content element or duplicate H1 was found. Desktop, tablet and mobile screenshots were reviewed for image crops, navigation, readable copy, service directory hierarchy, FAQ controls and form usability.
+The baseline browser layout sweep covered **320, 375, 390, 430, 768, 1024, 1280 and 1440 pixels**. After the client-directed service restructure, the affected home, about, services, irrigation, drainage, FAQ and estimate routes were rechecked at 390 pixels; home, about, services, irrigation and drainage were rechecked at 1280 pixels. No horizontal overflow or duplicate H1 was found. Desktop and mobile views were reviewed for image crops, navigation, readable copy, service hierarchy, FAQ controls and form usability.
 
-The production HTTP audit checks status codes, unique titles and descriptions, H1 count, social metadata, duplicate IDs, visible placeholder text, matching FAQ schema, every internal destination and fragment, and referenced image responses. All ten routes returned 200; the eight unique referenced images loaded; no audit failures were found. Unpublished blog slugs return 404. Raw evidence: [route-audit.json](qa/route-audit.json). Re-run with `node scripts/audit-routes.mjs http://127.0.0.1:3001` while the production preview is running.
+The production HTTP audit checks status codes, unique titles and descriptions, H1 count, social metadata, duplicate IDs, visible placeholder text, matching FAQ schema, every internal destination and fragment, the retired service redirect and referenced image responses. All nine routes returned 200; the old smart-services route returned the intended 308; the eight unique referenced images loaded; no audit failures were found. Unpublished blog slugs return 404. Raw evidence: [route-audit.json](qa/route-audit.json). Re-run with `node scripts/audit-routes.mjs http://127.0.0.1:3001` while the production preview is running.
 
 A final browser navigation pass through the primary routes and article preview produced no new console errors or warnings in the production build.
 
 Browser interaction checks passed:
 
 - Mobile navigation opens and closes, supports Escape, and returns focus to its trigger.
+- The Services submenu contains only All services, Irrigation systems and Drainage solutions.
 - Native FAQ disclosures respond to keyboard activation and touch-sized controls.
 - The project viewer opens as a modal dialog; Escape closes it and restores trigger focus.
 - The sticky service topic menu collapses on mobile, closes after a jump, and leaves the destination heading below the bar.

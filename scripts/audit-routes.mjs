@@ -7,7 +7,6 @@ const routes = [
   "/services",
   "/services/irrigation-systems",
   "/services/drainage-solutions",
-  "/services/smart-upgrades",
   "/faq",
   "/blog",
   "/contact",
@@ -128,6 +127,19 @@ if (missing.status !== 404)
   failures.push({
     problem: "Unpublished article must 404",
     status: missing.status,
+  });
+const retiredSmartServices = await fetch(base + "/services/smart-upgrades", {
+  redirect: "manual",
+});
+if (
+  retiredSmartServices.status !== 308 ||
+  new URL(retiredSmartServices.headers.get("location"), base).pathname !==
+    "/services/irrigation-systems"
+)
+  failures.push({
+    problem: "Retired smart services route must redirect permanently",
+    status: retiredSmartServices.status,
+    location: retiredSmartServices.headers.get("location"),
   });
 mkdirSync("docs/qa", { recursive: true });
 writeFileSync(

@@ -9,7 +9,7 @@ import { images } from "../../content/assets";
 import { pageMetadata } from "../../lib/seo";
 export const metadata = pageMetadata(
   "About Our Wichita Irrigation Company",
-  "Learn how TenderCare approaches sprinkler systems, drainage and seasonal irrigation service for Wichita-area properties.",
+  "Locally family-owned since 1982, TenderCare provides irrigation and water-extension services for Wichita-area properties.",
   "/about",
 );
 export default function Page() {
@@ -21,14 +21,14 @@ export default function Page() {
         eyebrow="About TenderCare"
         heading="Water management starts with the property."
         accent=""
-        body="TenderCare installs, repairs and maintains irrigation and drainage systems across the Wichita metro. Every recommendation begins with the system, the site and the problem you want solved."
+        body="Locally family-owned since 1982, TenderCare installs, repairs and maintains irrigation systems and water extensions across the Wichita metro. Every recommendation begins with the system, the site and the problem you want solved."
         image={images.team}
       />
       <ContentSection
         layout="split"
         eyebrow="Start with the cause"
         heading="The visible problem is only part of the story."
-        body="A dry lawn can come from a damaged head, low pressure, poor coverage or the schedule. A wet area can come from runoff, grading, slow soil or the irrigation system itself."
+        body="A dry lawn can come from a damaged head, low pressure, poor coverage or the schedule. Water collecting near the house can come from a short downspout or sump pump discharge route."
       >
         <p>
           Where the problem appears, when it happens and what changed recently

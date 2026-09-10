@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-04T22:19:12.077Z",
+  "checkedAt": "2026-09-10T15:01:33.148Z",
   "base": "http://127.0.0.1:3001",
   "results": [
     {
@@ -7,7 +7,7 @@
       "status": 200,
       "h1Count": 1,
       "title": "Wichita Irrigation, Sprinkler & Drainage Services | TenderCare Irrigation",
-      "description": "Sprinkler installation and repair, yard drainage, smart controller upgrades and seasonal irrigation service across the Wichita metro. Request a free estimate.",
+      "description": "Sprinkler installation, repair, controller upgrades, winterization, and downspout or sump pump extensions across the Wichita metro.",
       "canonical": null,
       "robots": "noindex, nofollow",
       "ogTitle": "Wichita Irrigation, Sprinkler & Drainage Services",
@@ -25,7 +25,7 @@
       "status": 200,
       "h1Count": 1,
       "title": "About Our Wichita Irrigation Company | TenderCare Irrigation",
-      "description": "Learn how TenderCare approaches sprinkler systems, drainage and seasonal irrigation service for Wichita-area properties.",
+      "description": "Locally family-owned since 1982, TenderCare provides irrigation and water-extension services for Wichita-area properties.",
       "canonical": null,
       "robots": "noindex, nofollow",
       "ogTitle": "About Our Wichita Irrigation Company",
@@ -42,7 +42,7 @@
       "status": 200,
       "h1Count": 1,
       "title": "Irrigation & Drainage Services in Wichita | TenderCare Irrigation",
-      "description": "Compare sprinkler installation, repair, maintenance, drainage, smart controller, backflow testing and winterization services in the Wichita metro.",
+      "description": "Compare sprinkler installation, repair, maintenance, controller, backflow, winterization, downspout and sump pump extension services in Wichita.",
       "canonical": null,
       "robots": "noindex, nofollow",
       "ogTitle": "Irrigation & Drainage Services in Wichita",
@@ -58,11 +58,11 @@
       "route": "/services/irrigation-systems",
       "status": 200,
       "h1Count": 1,
-      "title": "Irrigation & Sprinkler Systems in Wichita, KS | TenderCare Irrigation",
-      "description": "Sprinkler installation, repair and maintenance in Wichita. Explore practical irrigation solutions and seasonal care from TenderCare Irrigation.",
+      "title": "Irrigation, Sprinkler Repair & Winterization in Wichita | TenderCare Irrigation",
+      "description": "Sprinkler installation, repair, maintenance, controller upgrades, backflow testing and winterization across the Wichita metro.",
       "canonical": null,
       "robots": "noindex, nofollow",
-      "ogTitle": "Irrigation & Sprinkler Systems in Wichita, KS",
+      "ogTitle": "Irrigation, Sprinkler Repair & Winterization in Wichita",
       "schemaTypes": [
         [
           "ProfessionalService",
@@ -77,30 +77,11 @@
       "route": "/services/drainage-solutions",
       "status": 200,
       "h1Count": 1,
-      "title": "Yard Drainage & French Drains in Wichita, KS | TenderCare Irrigation",
-      "description": "Explore yard drainage, French drains and downspout extensions in Wichita. Understand standing water and request a property assessment from TenderCare.",
+      "title": "Downspout & Sump Pump Extensions in Wichita, KS | TenderCare Irrigation",
+      "description": "Downspout and sump pump discharge extensions for Wichita-area properties. Plan a practical route away from the house and problem areas.",
       "canonical": null,
       "robots": "noindex, nofollow",
-      "ogTitle": "Yard Drainage & French Drains in Wichita, KS",
-      "schemaTypes": [
-        [
-          "ProfessionalService",
-          "Organization"
-        ],
-        "FAQPage",
-        "Service"
-      ],
-      "duplicateIds": 0
-    },
-    {
-      "route": "/services/smart-upgrades",
-      "status": 200,
-      "h1Count": 1,
-      "title": "Smart Controllers & Sprinkler Winterization in Wichita | TenderCare Irrigation",
-      "description": "Smart irrigation controller upgrades, backflow testing and sprinkler winterization for the Wichita metro. Explore seasonal system care with TenderCare.",
-      "canonical": null,
-      "robots": "noindex, nofollow",
-      "ogTitle": "Smart Controllers & Sprinkler Winterization in Wichita",
+      "ogTitle": "Downspout & Sump Pump Extensions in Wichita, KS",
       "schemaTypes": [
         [
           "ProfessionalService",
@@ -116,7 +97,7 @@
       "status": 200,
       "h1Count": 1,
       "title": "Wichita Irrigation & Drainage FAQs | TenderCare Irrigation",
-      "description": "Clear answers about sprinkler repairs, installation, drainage, maintenance plans, smart controllers, backflow testing and winterization in Wichita.",
+      "description": "Clear answers about sprinkler systems, controller upgrades, backflow testing, winterization, downspout extensions and sump pump extensions in Wichita.",
       "canonical": null,
       "robots": "noindex, nofollow",
       "ogTitle": "Wichita Irrigation & Drainage FAQs",
@@ -134,7 +115,7 @@
       "status": 200,
       "h1Count": 1,
       "title": "Irrigation Resources for Wichita Homeowners | TenderCare Irrigation",
-      "description": "Read clear answers about sprinkler repair, drainage, winterization and smart watering for Wichita-area properties.",
+      "description": "Read clear answers about sprinkler repair, water extensions, winterization and smart watering for Wichita-area properties.",
       "canonical": null,
       "robots": "noindex, nofollow",
       "ogTitle": "Irrigation Resources for Wichita Homeowners",
@@ -151,7 +132,7 @@
       "status": 200,
       "h1Count": 1,
       "title": "Contact TenderCare Irrigation in Wichita | TenderCare Irrigation",
-      "description": "Contact TenderCare about sprinkler installation, irrigation repair, yard drainage or seasonal service in the Wichita metro.",
+      "description": "Contact TenderCare about sprinkler installation, repair, winterization, downspout extensions or sump pump extensions in the Wichita metro.",
       "canonical": null,
       "robots": "noindex, nofollow",
       "ogTitle": "Contact TenderCare Irrigation in Wichita",
@@ -168,7 +149,7 @@
       "status": 200,
       "h1Count": 1,
       "title": "Request a Free Irrigation Estimate in Wichita | TenderCare Irrigation",
-      "description": "Request a free estimate for sprinkler installation, irrigation repair, yard drainage, controller upgrades or seasonal service in the Wichita metro.",
+      "description": "Request an estimate for sprinkler installation, irrigation repair, controller upgrades, winterization, or downspout and sump pump extensions in Wichita.",
       "canonical": null,
       "robots": "noindex, nofollow",
       "ogTitle": "Request a Free Irrigation Estimate in Wichita",

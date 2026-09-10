@@ -41,7 +41,7 @@ export const faqs: FAQ[] = [
     category: "Estimates & scheduling",
     question: "What if I am not sure which service I need?",
     answer:
-      "Describe the symptom instead of guessing at the solution. Uneven watering, a zone that will not run, water near the foundation or standing water after rain give TenderCare a useful starting point for the conversation.",
+      "Describe the symptom instead of guessing at the solution. Uneven watering, a zone that will not run, roof runoff near the house or a short sump discharge line give TenderCare a useful starting point for the conversation.",
     link: "/contact",
     linkLabel: "Describe your property issue",
   },
@@ -116,26 +116,8 @@ export const faqs: FAQ[] = [
       "There is no single schedule that fits every Wichita lawn. Grass type, soil, weather and recent rainfall all matter, so check the soil and adjust the controller as conditions change.",
     source: "https://www.epa.gov/watersense/watering-tips",
     sourceLabel: "EPA WaterSense watering tips",
-    link: "/services/smart-upgrades#controller-upgrades",
+    link: "/services/irrigation-systems#controller-upgrades",
     linkLabel: "Explore smarter scheduling",
-  },
-  {
-    id: "standing-water",
-    category: "Drainage",
-    question: "What causes standing water in a yard?",
-    answer:
-      "Low areas, compacted or slowly draining soil, roof runoff, blocked outlets and overwatering can all cause pooling. Where the water appears and how long it remains help determine whether surface drainage, subsurface collection or an irrigation correction is appropriate.",
-    link: "/services/drainage-solutions#yard-drainage",
-    linkLabel: "Understand yard drainage",
-  },
-  {
-    id: "french-drain",
-    category: "Drainage",
-    question: "When is a French drain appropriate?",
-    answer:
-      "A French drain can help collect water in saturated ground and direct it toward a suitable outlet. It needs a planned route and discharge point; it may not be the right approach for every surface-water problem.",
-    link: "/services/drainage-solutions#french-drains",
-    linkLabel: "Explore French drains",
   },
   {
     id: "downspout",
@@ -147,13 +129,22 @@ export const faqs: FAQ[] = [
     linkLabel: "Explore downspout extensions",
   },
   {
-    id: "drainage-assessment",
+    id: "sump-pump-extension",
     category: "Drainage",
-    question: "How is a yard drainage problem evaluated?",
+    question: "What does a sump pump discharge extension do?",
     answer:
-      "A drainage assessment looks at where water enters the property, where it collects, the slope and soil conditions, and whether there is a suitable outlet. Observations made during or soon after rain can help show how the water is actually moving.",
-    link: "/services/drainage-solutions#yard-drainage",
-    linkLabel: "See how yard drainage is approached",
+      "A sump pump discharge extension carries pumped water farther from the foundation to a suitable outlet. The route should account for slope, access and freezing conditions so it does not send water back toward the house or create a new problem elsewhere.",
+    link: "/services/drainage-solutions#sump-pump-extensions",
+    linkLabel: "Explore sump pump extensions",
+  },
+  {
+    id: "extension-outlet",
+    category: "Drainage",
+    question: "Where should a downspout or sump pump extension end?",
+    answer:
+      "The outlet should release water where it can continue away from the house without crossing a walkway or shifting the problem to a neighboring property. The right location depends on the slope, available space and local requirements.",
+    link: "/services/drainage-solutions",
+    linkLabel: "Review water extension options",
   },
   {
     id: "backflow-frequency",
@@ -164,7 +155,7 @@ export const faqs: FAQ[] = [
     source:
       "https://library.municode.com/ks/wichita/codes/code_of_ordinances?nodeId=TIT17WA_CH17.10BACRCOCO",
     sourceLabel: "Wichita Code, Chapter 17.10",
-    link: "/services/smart-upgrades#backflow-testing",
+    link: "/services/irrigation-systems#backflow-testing",
     linkLabel: "Understand backflow testing",
   },
   {
@@ -175,7 +166,7 @@ export const faqs: FAQ[] = [
       "The City of Wichita states that irrigation systems connected to its water system must have a working backflow device. Other communities and water suppliers may have their own requirements; confirm what applies to your property.",
     source: "https://www.wichita.gov/716/Backflow-Cross-Connection-Control",
     sourceLabel: "City of Wichita backflow guidance",
-    link: "/services/smart-upgrades#backflow-testing",
+    link: "/services/irrigation-systems#backflow-testing",
     linkLabel: "Explore backflow service",
   },
   {
@@ -184,7 +175,7 @@ export const faqs: FAQ[] = [
     question: "When should sprinklers be winterized in Wichita?",
     answer:
       "Winterize before freezing weather can damage components that still hold water. The exact timing changes with the forecast and the system, so arrange service before the cold-weather rush.",
-    link: "/services/smart-upgrades#winterization",
+    link: "/services/irrigation-systems#winterization",
     linkLabel: "Plan sprinkler winterization",
   },
   {
@@ -193,7 +184,7 @@ export const faqs: FAQ[] = [
     question: "Is turning off the sprinkler timer enough for winter?",
     answer:
       "No. Turning off the timer stops scheduled watering but does not remove water from pipes, valves or exposed assemblies. The system needs a shutdown procedure suited to its equipment and water source.",
-    link: "/services/smart-upgrades#winterization",
+    link: "/services/irrigation-systems#winterization",
     linkLabel: "Understand seasonal shutdown",
   },
   {
@@ -205,7 +196,7 @@ export const faqs: FAQ[] = [
     source:
       "https://www.epa.gov/watersense/weather-based-irrigation-controllers",
     sourceLabel: "EPA WaterSense controller guidance",
-    link: "/services/smart-upgrades#controller-upgrades",
+    link: "/services/irrigation-systems#controller-upgrades",
     linkLabel: "Explore controller upgrades",
   },
   {
@@ -214,7 +205,7 @@ export const faqs: FAQ[] = [
     question: "Does a smart controller need Wi-Fi?",
     answer:
       "Connection requirements vary by model and feature. Some connected controls rely on internet access for weather data or remote operation. Check the manufacturer’s requirements and the signal at the installation location before selecting equipment.",
-    link: "/services/smart-upgrades#controller-upgrades",
+    link: "/services/irrigation-systems#controller-upgrades",
     linkLabel: "Discuss controller compatibility",
   },
   {
@@ -223,7 +214,7 @@ export const faqs: FAQ[] = [
     question: "Can a smart controller fix uneven watering?",
     answer:
       "No. A smart controller can improve when and how long the system runs, but it cannot repair a leak, clogged nozzle, poor pressure or misaligned head. Correct the water-delivery problem first, then use the controller to improve the schedule.",
-    link: "/services/smart-upgrades#controller-upgrades",
+    link: "/services/irrigation-systems#controller-upgrades",
     linkLabel: "Explore smart controller upgrades",
   },
   {

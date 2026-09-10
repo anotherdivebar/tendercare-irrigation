@@ -6,7 +6,7 @@ import { services } from "../../content/services";
 import { pageMetadata, JsonLd, breadcrumbSchema } from "../../lib/seo";
 export const metadata = pageMetadata(
   "Irrigation & Drainage Services in Wichita",
-  "Compare sprinkler installation, repair, maintenance, drainage, smart controller, backflow testing and winterization services in the Wichita metro.",
+  "Compare sprinkler installation, repair, maintenance, controller, backflow, winterization, downspout and sump pump extension services in Wichita.",
   "/services",
 );
 export default function Page() {
@@ -18,7 +18,7 @@ export default function Page() {
         eyebrow="Irrigation & drainage services / Wichita metro"
         heading="Find the service that fits the problem."
         accent=""
-        body="Choose from irrigation installation and repair, yard drainage, controller upgrades, backflow testing and seasonal system care."
+        body="Choose from irrigation installation and repair, controller upgrades, backflow testing, winterization, and downspout or sump pump extensions."
         secondaryLabel="Help me choose"
         secondaryLink={{ href: "/contact" }}
       />

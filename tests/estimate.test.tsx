@@ -94,12 +94,15 @@ describe("Estimate request", () => {
   it("supports an editable default and disabling URL preselection", () => {
     window.history.replaceState({}, "", estimateLink("winterization").href);
     render(
-      <EstimateForm defaultService="Yard drainage" useQueryContext={false} />,
+      <EstimateForm
+        defaultService="Sump pump extensions"
+        useQueryContext={false}
+      />,
     );
     expect(
       (screen.getByLabelText("What can we help with? *") as HTMLSelectElement)
         .value,
-    ).toBe("Yard drainage");
+    ).toBe("Sump pump extensions");
   });
   it("requires only the chosen contact method", () => {
     expect(validateEstimate(valid)).toEqual({});

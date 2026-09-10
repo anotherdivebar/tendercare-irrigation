@@ -101,17 +101,6 @@ export default declareComponent(Header, {
       group: "Services menu",
       tooltip: "Choose the drainage solutions page.",
     }),
-    seasonalLabel: props.Text({
-      name: "Smart and seasonal label",
-      group: "Services menu",
-      tooltip: "Edit the smart and seasonal category label.",
-      defaultValue: "Smart & seasonal services",
-    }),
-    seasonalLink: props.Link({
-      name: "Smart and seasonal destination",
-      group: "Services menu",
-      tooltip: "Choose the smart upgrades and seasonal services page.",
-    }),
     links: props.Slot({
       name: "Other navigation links",
       group: "Composition",

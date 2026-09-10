@@ -13,7 +13,7 @@ export interface FooterProps {
 }
 export function Footer({
   businessName = "TenderCare Irrigation",
-  description = "Irrigation, drainage and seasonal service for Wichita-area properties.",
+  description = "Irrigation systems, seasonal service and water extensions for Wichita-area properties.",
   location = "Serving Wichita & the surrounding metro.",
   phone,
   email,

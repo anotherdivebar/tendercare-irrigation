@@ -1,5 +1,6 @@
 import { images } from "./assets";
 import type { ImageAsset } from "../components/ui";
+
 export interface ServiceDetail {
   summary: string;
   id: string;
@@ -11,6 +12,7 @@ export interface ServiceDetail {
   approach: string;
   benefit: string;
 }
+
 export interface ServiceCategory {
   slug: string;
   name: string;
@@ -21,16 +23,17 @@ export interface ServiceCategory {
   image: ImageAsset;
   details: ServiceDetail[];
 }
+
 export const services: ServiceCategory[] = [
   {
     slug: "irrigation-systems",
     name: "Irrigation systems",
-    title: "Irrigation & Sprinkler Systems in Wichita, KS",
+    title: "Irrigation, Sprinkler Repair & Winterization in Wichita",
     description:
-      "Sprinkler installation, repair and maintenance in Wichita. Explore practical irrigation solutions and seasonal care from TenderCare Irrigation.",
+      "Sprinkler installation, repair, maintenance, controller upgrades, backflow testing and winterization across the Wichita metro.",
     headline: "Get even coverage and dependable control.",
     intro:
-      "Whether you need a new system or one zone has stopped working, TenderCare handles sprinkler installation, repair and seasonal maintenance across the Wichita metro. Start with what the system is doing now and what you need it to do.",
+      "TenderCare handles complete sprinkler systems, targeted repairs, maintenance, controller upgrades, backflow testing and winterization across the Wichita metro. Start with what the system is doing now and what you need it to do.",
     image: images.lawn,
     details: [
       {
@@ -68,93 +71,19 @@ export const services: ServiceCategory[] = [
       {
         id: "maintenance-plans",
         summary:
-          "Spring startup, seasonal system checks and winterization based on the property and water source.",
+          "Connect spring startup and in-season system checks around the property and water source.",
         name: "Maintenance plans",
         heading: "What does a sprinkler maintenance plan cover?",
         answer:
-          "Seasonal irrigation maintenance can connect spring startup, in-season system checks and winterization. The appropriate service plan depends on the water source, zone count, backflow equipment and condition of the system.",
+          "Seasonal irrigation maintenance can connect spring startup and in-season system checks. The appropriate service plan depends on the water source, zone count, backflow equipment and condition of the system.",
         body: "Landscapes grow, sprinkler heads shift and watering needs change with the season. Even a system that ran well last year can develop coverage problems, leaks or outdated settings. A maintenance schedule should reflect the equipment and conditions on the property.",
         symptoms:
-          "A system coming back into use in spring\nCoverage changing as plants grow\nWatering schedules that never change\nA need to plan ahead for fall shutdown",
+          "A system coming back into use in spring\nCoverage changing as plants grow\nWatering schedules that never change\nSmall issues returning during the season",
         approach:
-          "Start with your water source, number of zones, controller and backflow equipment. Discuss which startup, in-season and winterization services fit the system, then confirm the current scope and availability with TenderCare.",
+          "Start with your water source, number of zones, controller and backflow equipment. Discuss which startup and in-season services fit the system, then confirm the current scope and availability with TenderCare.",
         benefit:
           "A seasonal plan gives the system regular attention as conditions change.",
       },
-    ],
-  },
-  {
-    slug: "drainage-solutions",
-    name: "Drainage solutions",
-    title: "Yard Drainage & French Drains in Wichita, KS",
-    description:
-      "Explore yard drainage, French drains and downspout extensions in Wichita. Understand standing water and request a property assessment from TenderCare.",
-    headline: "Stop standing water from taking over your yard.",
-    intro:
-      "Pooling water can come from the grade, slow-draining soil, roof runoff or the irrigation system itself. TenderCare assesses the source and recommends yard drainage, French drains or downspout extensions when they fit the property.",
-    image: images.equipment,
-    details: [
-      {
-        id: "yard-drainage",
-        summary:
-          "Assess low spots, runoff and persistent pooling to find an appropriate drainage solution.",
-        name: "Yard drainage",
-        heading: "What causes standing water in a yard?",
-        answer:
-          "Standing water can result from low spots, compacted or slowly draining soil, roof runoff, blocked outlets or overwatering. The pattern and timing of the pooling help identify the cause.",
-        body: "Water that appears only during a storm may need a different solution from a wet area that persists during dry weather. Taking photos after rain, noting how long water remains and checking whether the irrigation was running can help explain the problem.",
-        symptoms:
-          "Persistent puddles or soft, muddy lawn areas\nWater moving toward the house or a patio\nErosion along a slope or planting bed\nWet areas that return after every rainfall",
-        approach:
-          "The assessment traces where the water starts, how it crosses the property and where it can safely go. The solution may involve surface collection, redirected runoff or an irrigation repair. Any route needs to account for structures and neighboring property.",
-        benefit:
-          "Managing excess water can reduce erosion and prolonged saturation around lawns, hardscapes and foundations.",
-      },
-      {
-        id: "french-drains",
-        summary:
-          "Collect water in saturated ground and direct it toward a suitable discharge point.",
-        name: "French drains",
-        heading: "When is a French drain the right solution?",
-        answer:
-          "A French drain can help intercept water moving through saturated soil and carry it toward a suitable outlet. It works best when the problem, pipe depth and discharge route have been assessed together.",
-        body: "A French drain uses a gravel-filled trench and perforated pipe to collect water below the surface. It is not a cure for every puddle. Fast-moving surface runoff may need a different collection method, and every drain needs an appropriate outlet.",
-        symptoms:
-          "Recurring saturated strips beside a slope\nWet ground that drains slowly after rain\nSubsurface water collecting in a low area",
-        approach:
-          "Start with the wet area, changes in elevation and possible outlet locations. The proposed scope should show the collection points, trench route, materials, cleanout access and how disturbed landscaping will be restored. Applicable discharge requirements should be confirmed before installation.",
-        benefit:
-          "A properly planned drain can make persistently wet ground more usable and direct intercepted water away from problem areas.",
-      },
-      {
-        id: "downspout-extensions",
-        summary:
-          "Route concentrated roof runoff away from problem areas around the property.",
-        name: "Downspout extensions",
-        heading: "Can roof runoff be the source of a drainage problem?",
-        answer:
-          "Yes. Downspouts that empty near the house can concentrate roof runoff at the foundation or in nearby landscape beds. Extending the discharge route may help when a suitable outlet is available.",
-        body: "Look at the area directly below your downspouts after a rain. Washed-out mulch, repeated puddles and channels in the soil can indicate that roof water is overwhelming a small area. Gutters and outlets should also be checked for blockages.",
-        symptoms:
-          "Puddles at the base of a downspout\nMulch washing out during storms\nWater flowing across a walkway\nRunoff collecting beside the foundation",
-        approach:
-          "TenderCare can assess above-ground and buried extension options for the property. The route should account for slope, maintenance access, freezing conditions and an outlet that does not move the problem somewhere else.",
-        benefit:
-          "Spreading or routing concentrated roof runoff can help protect planting beds and reduce water accumulation near the home.",
-      },
-    ],
-  },
-  {
-    slug: "smart-upgrades",
-    name: "Smart & seasonal services",
-    title: "Smart Controllers & Sprinkler Winterization in Wichita",
-    description:
-      "Smart irrigation controller upgrades, backflow testing and sprinkler winterization for the Wichita metro. Explore seasonal system care with TenderCare.",
-    headline: "Make your system easier to run—and ready for winter.",
-    intro:
-      "Controller upgrades simplify scheduling. Backflow testing checks a key safety device. Winterization prepares the system for freezing weather. TenderCare provides all three across the Wichita metro.",
-    image: images.field,
-    details: [
       {
         id: "controller-upgrades",
         summary:
@@ -202,6 +131,51 @@ export const services: ServiceCategory[] = [
           "Start with the water source, controller and any known problems. The shutdown scope should address the supply, controls and components that hold water. If compressed air is appropriate, its pressure and use must match the system.",
         benefit:
           "A proper shutdown helps reduce the risk of freeze damage and gives you a clearer starting point for spring.",
+      },
+    ],
+  },
+  {
+    slug: "drainage-solutions",
+    name: "Drainage solutions",
+    title: "Downspout & Sump Pump Extensions in Wichita, KS",
+    description:
+      "Downspout and sump pump discharge extensions for Wichita-area properties. Plan a practical route away from the house and problem areas.",
+    headline: "Carry roof and sump water farther from the house.",
+    intro:
+      "TenderCare installs downspout and sump pump discharge extensions across the Wichita metro. Each job starts with where the water exits now, the property slope and a suitable place for it to go.",
+    image: images.equipment,
+    details: [
+      {
+        id: "downspout-extensions",
+        summary:
+          "Route concentrated roof runoff farther from the house and nearby landscape beds.",
+        name: "Downspout extensions",
+        heading: "Can roof runoff be the source of water near the house?",
+        answer:
+          "Yes. Downspouts that empty close to the house can concentrate roof runoff beside the foundation or in nearby landscape beds. A longer discharge route can help when there is a suitable outlet.",
+        body: "Look at the area directly below your downspouts after a rain. Washed-out mulch, repeated puddles and channels in the soil can indicate that roof water is overwhelming a small area. Gutters and outlets should also be checked for blockages.",
+        symptoms:
+          "Puddles at the base of a downspout\nMulch washing out during storms\nWater flowing across a walkway\nRoof runoff collecting beside the house",
+        approach:
+          "TenderCare can assess above-ground and buried extension options for the property. The route should account for slope, maintenance access, freezing conditions and an outlet that does not move the problem somewhere else.",
+        benefit:
+          "Routing concentrated roof runoff farther away can help protect planting beds and reduce water accumulation beside the home.",
+      },
+      {
+        id: "sump-pump-extensions",
+        summary:
+          "Extend sump pump discharge away from the foundation along a practical outlet route.",
+        name: "Sump pump extensions",
+        heading: "What does a sump pump discharge extension do?",
+        answer:
+          "A sump pump discharge extension carries pumped water farther from the foundation to a suitable outlet. The route needs to work with the property slope, equipment and freezing conditions.",
+        body: "A short discharge line can release water where it collects near the house or cycles back toward the foundation. Extending the line may improve the discharge location, but the route and outlet still need to fit the property.",
+        symptoms:
+          "Sump water releasing close to the foundation\nRepeated saturation near the discharge point\nA temporary hose crossing a walkway or lawn\nDischarge that flows back toward the house",
+        approach:
+          "TenderCare reviews the existing outlet, the proposed route and where the water can finish safely. The scope should account for slope, access, freeze exposure and a discharge point that does not create a problem elsewhere.",
+        benefit:
+          "A properly routed extension moves sump discharge farther from the house and makes the outlet more intentional.",
       },
     ],
   },

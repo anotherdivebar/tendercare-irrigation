@@ -66,9 +66,9 @@ export function ServiceLanding({ category }: { category: ServiceCategory }) {
       {category.slug === "drainage-solutions" && (
         <ContentSection
           theme="dark"
-          eyebrow="Start with the whole property"
-          heading="A drain needs somewhere to go."
-          body="Effective drainage considers both collection and discharge. Before choosing a solution, discuss the slope, neighboring properties, available outlets and any local requirements."
+          eyebrow="Plan the full discharge route"
+          heading="An extension needs a suitable place to end."
+          body="Before extending a downspout or sump pump discharge, consider the slope, walkways, neighboring properties, freezing conditions, maintenance access and any local requirements."
         />
       )}
       <FaqPreview ids={questions} />

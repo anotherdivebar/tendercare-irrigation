@@ -27,9 +27,9 @@ Edit `src/content/business.ts` for the preview; use the same approved data in We
 
 - [ ] Obtain real customer reviews, permission, original source links and approved attribution. Existing Alex Monroe, Taylor Reed, Jordan Avery, Morgan Blake, Casey Rowan and Riley Sutton quotations remain unverified and are not displayed.
 - [ ] Confirm rights for supplied photographs, identifiable workers and properties, plus the logo from Webflow.
-- [ ] Supply labeled drainage project photos and verified project captions. General irrigation work must not be relabeled as a drainage job.
+- [ ] Supply labeled downspout or sump pump extension photos and verified project captions. General irrigation work must not be relabeled as an extension job.
 - [ ] Supply matched before/after photos of the same viewpoint and documented work.
-- [ ] Provide real company history, founding date, ownership, qualifications and team biographies if desired. None have been fabricated. The About page currently focuses on the service approach.
+- [ ] Provide a fuller company history, ownership names, qualifications and team biographies if desired. The client has verified that TenderCare remains locally family-owned and has operated since 1982.
 - [ ] Verify any manufacturer partnership before adding Hunter or other endorsement logos.
 
 ## Production integrations

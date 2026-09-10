@@ -7,7 +7,7 @@ import { faqs, faqCategories, categoryId } from "../../content/faqs";
 import { pageMetadata, JsonLd, faqSchema } from "../../lib/seo";
 export const metadata = pageMetadata(
   "Wichita Irrigation & Drainage FAQs",
-  "Clear answers about sprinkler repairs, installation, drainage, maintenance plans, smart controllers, backflow testing and winterization in Wichita.",
+  "Clear answers about sprinkler systems, controller upgrades, backflow testing, winterization, downspout extensions and sump pump extensions in Wichita.",
   "/faq",
 );
 export default function Page() {
@@ -19,7 +19,7 @@ export default function Page() {
         eyebrow="Irrigation & drainage FAQ"
         heading="Answers before you schedule."
         accent=""
-        body="Get direct answers about estimates, scheduling, sprinkler systems, drainage, backflow testing, smart controllers and winterization."
+        body="Get direct answers about estimates, sprinkler systems, downspout and sump pump extensions, backflow testing, controllers and winterization."
         ctaLabel="Ask us a question"
         ctaLink={{ href: "/contact" }}
       />

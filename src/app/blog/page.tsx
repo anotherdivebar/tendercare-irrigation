@@ -9,7 +9,7 @@ import { publishedArticles } from "../../content/posts";
 import { pageMetadata } from "../../lib/seo";
 export const metadata = pageMetadata(
   "Irrigation Resources for Wichita Homeowners",
-  "Read clear answers about sprinkler repair, drainage, winterization and smart watering for Wichita-area properties.",
+  "Read clear answers about sprinkler repair, water extensions, winterization and smart watering for Wichita-area properties.",
   "/blog",
 );
 export default function Page() {
@@ -52,7 +52,8 @@ export default function Page() {
             <span>Repair questions ↗</span>
           </a>
           <a href="/faq#drainage">
-            Water keeps collecting in my yard <span>Drainage questions ↗</span>
+            Roof or sump water is discharging too close to the house{" "}
+            <span>Extension questions ↗</span>
           </a>
           <a href="/faq#winterization">
             I’m getting ready for colder weather{" "}

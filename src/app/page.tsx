@@ -14,7 +14,7 @@ import { pageMetadata } from "../lib/seo";
 import { images } from "../content/assets";
 export const metadata = pageMetadata(
   "Wichita Irrigation, Sprinkler & Drainage Services",
-  "Sprinkler installation and repair, yard drainage, smart controller upgrades and seasonal irrigation service across the Wichita metro. Request a free estimate.",
+  "Sprinkler installation, repair, controller upgrades, winterization, and downspout or sump pump extensions across the Wichita metro.",
   "/",
 );
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
       <Hero
         heading="Wichita irrigation that works."
         accent="For every season."
-        body="Dry spots, broken sprinklers, standing water or a new landscape to plan? TenderCare installs, repairs and maintains irrigation and drainage systems across the Wichita metro."
+        body="Dry spots, broken sprinklers, roof runoff or a new landscape to plan? TenderCare installs, repairs and maintains irrigation systems and water extensions across the Wichita metro."
         image={images.hero}
         caption="Reliable coverage starts with the property."
         secondaryLabel="Explore our services"
@@ -32,15 +32,15 @@ export default function Home() {
       <TrustBar />
       <ServiceCategoryGrid
         heading={"Start with what\nyour yard is telling you."}
-        body="Uneven watering, soggy ground and hard-to-manage controls each point to a different problem. Choose the service that fits what you are seeing."
+        body="Uneven watering, hard-to-manage controls and water discharging too close to the house each call for a different solution. Choose the service that fits what you are seeing."
         ctaLabel="View all services"
         ctaLink={{ href: "/services" }}
       >
         <ServiceCard
           image={images.lawn}
           heading="Irrigation systems"
-          body="Install a new system, repair a problem zone or keep an existing system ready for the season."
-          services="Installation · Repairs · Maintenance"
+          body="Install a system, repair a problem zone, upgrade the controls or prepare existing equipment for the season."
+          services="Installation · Repairs · Maintenance · Controllers · Backflow · Winterization"
           link={{ href: "/services/irrigation-systems" }}
           linkLabel="Explore irrigation"
         />
@@ -48,25 +48,16 @@ export default function Home() {
           number="02"
           image={images.equipment}
           heading="Drainage solutions"
-          body="Find the source of standing water and plan a route that moves runoff away from problem areas."
-          services="Yard drainage · French drains · Downspouts"
+          body="Extend downspout or sump pump discharge away from the house along a route that fits the property."
+          services="Downspout extensions · Sump pump extensions"
           link={{ href: "/services/drainage-solutions" }}
           linkLabel="Explore drainage"
-        />
-        <ServiceCard
-          number="03"
-          image={images.field}
-          heading="Smart & seasonal care"
-          body="Simplify watering schedules, handle backflow testing and prepare the system for freezing weather."
-          services="Controllers · Backflow · Winterization"
-          link={{ href: "/services/smart-upgrades" }}
-          linkLabel="Explore smart upgrades"
         />
       </ServiceCategoryGrid>
       <ServiceFeatureSection
         eyebrow="How TenderCare approaches the work"
         heading="Look at the whole property.\nThen solve the right problem."
-        body="The dry patch, leaking valve or soggy corner is only the visible clue. Water supply, pressure, grade, soil and existing equipment all shape the solution."
+        body="A dry patch, leaking valve or discharge point beside the house is only the visible clue. Water supply, pressure, slope and existing equipment all shape the solution."
         image={images.install}
         caption="Irrigation work starts below the surface."
         ctaLabel="Get to know TenderCare"
@@ -74,8 +65,8 @@ export default function Home() {
       >
         <h3>The site shapes the solution.</h3>
         <p>
-          Soil, slope, sun exposure and planting areas determine where water is
-          needed and how it should move.
+          Water supply, slope, sun exposure, planting areas and existing outlets
+          determine where water is needed and where it can go.
         </p>
         <h3>Plan beyond the immediate repair.</h3>
         <p>

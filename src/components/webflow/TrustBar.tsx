@@ -6,9 +6,9 @@ export interface TrustBarProps {
   fourth?: string;
 }
 export function TrustBar({
-  first = "New systems & targeted repairs",
-  second = "Drainage planned around the site",
-  third = "Smart controls & seasonal service",
+  first = "Locally family-owned since 1982",
+  second = "Downspout & sump pump extensions",
+  third = "Controllers, backflow & winterization",
   fourth = "Serving the Wichita metro",
 }: TrustBarProps) {
   return (
